@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_19" directorySegmentName="seg_0" id="DACF49EE-AE00-FF7B-DD5D-CD33D2B91CA4">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Wypozyczenia_Klient" directorySegmentName="seg_0" id="DACF49EE-AE00-FF7B-DD5D-CD33D2B91CA4">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-19 12:12:31 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
