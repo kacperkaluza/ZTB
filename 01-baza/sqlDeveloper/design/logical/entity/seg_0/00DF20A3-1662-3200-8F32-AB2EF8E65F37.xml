@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00DF20A3-1662-3200-8F32-AB2EF8E65F37" name="p_72_Ubezpieczenie">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:36:39 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Ubezpieczenie" id="C7E3B705-D95A-8BD4-F443-52ED8D7B161C">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:37:00 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Typu_Ubezpieczenia" id="30ABB196-E2CE-E344-0073-446C31ADFD1C">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:08:20 UTC</createdTime>
+<generatorID>C22F72C1-49DA-19A0-DF48-6BCDC642CE4F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>EDADAFDA-11D9-E063-2BA0-1283E623F1AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer_Polisy" id="C9AEA9C9-6454-6C6B-7BF4-93523F2FC8B0">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:44:19 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Od" id="9FFABF3D-25E0-F811-74D9-7ED63DEEEB3A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:54:21 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Do" id="182C2FE5-63CA-A433-08FD-2D3D1230E9A4">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:54:40 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kwota_Pokrycia" id="5DFA41DD-2B9E-E62A-37B7-13B090A3FA1F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:54:51 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Skladka" id="6F830999-6850-148F-E850-708875332539">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:54:52 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EDA4EB6E-7205-22D7-1B82-2B3C81A5D04B" name="p_72_Ubezpieczenie PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:37:15 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7E3B705-D95A-8BD4-F443-52ED8D7B161C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

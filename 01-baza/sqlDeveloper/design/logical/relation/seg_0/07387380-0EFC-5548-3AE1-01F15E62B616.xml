@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Platnosc_Wypozyczenia" directorySegmentName="seg_0" id="07387380-0EFC-5548-3AE1-01F15E62B616">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:20:39 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<targetPk>36DF9808-84A5-49DE-A5C4-DB82FF569BAE</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>0C8B2EBB-B0FB-3A10-83FA-67DD4955AA79</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>107A448C-BDF4-DADD-5B8C-3987E46838DE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

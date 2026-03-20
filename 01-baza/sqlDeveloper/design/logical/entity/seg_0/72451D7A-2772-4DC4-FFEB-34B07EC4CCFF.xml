@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72451D7A-2772-4DC4-FFEB-34B07EC4CCFF" name="p_72_Oddzial">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:07:03 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Oddzial" id="7C70604F-7402-210F-EE65-367656241A33">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:07:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa_Oddzialu" id="6E68484F-BB90-C6FA-86E3-C0575CF17116">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:07:25 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="80DF7F0E-23C3-33CE-57E7-C107E15463F0">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:09:17 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="93C9D4A1-85D9-2ACA-BE07-72EFF18ACDE5">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:09:58 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="godziny_otwarcia" id="A2F40449-92B7-3F5C-5153-4ECDEFF7096E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:10:24 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="czy_aktywny" id="85B0C2DE-1F33-9C6D-6F69-DFD553179F7D">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:10:52 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Adres" id="14E81B7B-71BF-230D-FE5D-3F110B90102E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:18:21 UTC</createdTime>
+<generatorID>08F0C46D-BC93-ECEC-55E5-C57E05851EEA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>5FF7A975-6208-6FC0-5599-E66798D49079</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01236E15-F080-A35F-D756-676AB4F0D44E" name="p_72_Oddzial PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:07:24 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7C70604F-7402-210F-EE65-367656241A33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

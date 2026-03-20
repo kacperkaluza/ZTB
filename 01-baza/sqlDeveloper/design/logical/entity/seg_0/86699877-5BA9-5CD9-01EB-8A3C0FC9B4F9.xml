@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86699877-5BA9-5CD9-01EB-8A3C0FC9B4F9" name="p_72_Status_Wypozyczenia">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:28:51 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Statusu" id="BED20622-B462-84B3-EB81-59BEDD8CC8BC">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:29:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa_Statusu" id="66942626-76D1-1F8C-A800-0725B134619A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:29:49 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Opis" id="33996DF7-F530-8805-046B-BCC36BD0D2DF">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:30:58 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0202B4C0-C1AA-45F7-F24D-0F6241C99AC0" name="p_72_Status_Wypozyczenia PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 07:29:54 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BED20622-B462-84B3-EB81-59BEDD8CC8BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

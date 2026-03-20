@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6F538FAD-2CED-5314-F746-33A0510065DB" name="p_72_Marka">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:55:17 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Marka" id="56107F93-87F4-F9BE-F2E2-845EED8F8FCB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:55:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Panstwa" id="12716EAB-BB5C-2418-63C1-0B07A1D65BB8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:56:49 UTC</createdTime>
+<generatorID>7BC37D5C-1AB0-0B49-21F2-4F46FF24487D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>8D80C3F1-0ECA-1DB0-725A-A112F42C6832</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa_Marki" id="F96FB70D-5680-E403-DEB5-0147C3BB1E20">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:57:46 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61957268-FD67-D251-8A1F-BCF0746178E3" name="p_72_Marka PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:55:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>56107F93-87F4-F9BE-F2E2-845EED8F8FCB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

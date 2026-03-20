@@ -1,0 +1,264 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6EFA6BA-D197-46B9-FF24-10B3032F7370" name="p_72_Samochod">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:18:08 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Samochod" id="DEF2FDB3-B8DE-9DE3-5658-7D850F21FB44">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:18:25 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Typu_Paliwa" id="52BDEF3C-A4C2-1377-154F-7CCDDA535EBB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:02:42 UTC</createdTime>
+<generatorID>BE95BCEE-A637-F9D1-F0E1-B42B4E92E7EA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>BB9799C1-5CAF-2F3E-2566-FE62DFEC9F71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Kolor" id="59465C27-D214-6E4F-C37F-E63CD38BD7C5">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:26:03 UTC</createdTime>
+<generatorID>EE9BBA5C-FBBC-303D-63BA-C19AFD798EDA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>7348870B-A891-FB8A-1349-0FB6A0EC1224</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Kategoria" id="C6077150-56EB-985F-6342-D0AA1DEB13B1">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:26:16 UTC</createdTime>
+<generatorID>49DEECB3-D10E-97AA-FF34-F7CC4C5724D7</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>92DECD2D-B069-7FFB-0D85-AE9331E68011</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Model" id="3E2F380E-37C7-3F29-B48C-9CA0537CDD49">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:26:29 UTC</createdTime>
+<generatorID>65D8EC67-30C1-4468-D490-E15483BFFD51</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>B32373C7-1F3F-B2BD-0D5E-458667A6D8DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer_Rejestracyjny" id="338ECEC8-3CBE-2E8E-9697-E93C8217FE56">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:52:33 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer_VIN" id="F685AA41-137F-2508-5B90-80822D636E8D">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:53:00 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17 CHAR</dataTypeSize>
+<ownDataTypeParameters>17 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rok_Produkcji" id="9434555A-78FC-1AE4-65D9-3815BC134844">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:53:21 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Przebieg_Km" id="1EAF0A85-440D-02F4-74A4-28574748DCAB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:53:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Liczba_Miejsc" id="AF72973B-E280-CA95-3894-155D4F0B4AC8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:54:11 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pojemnosc_Silnika_cm3" id="C6066C1E-67D1-05DA-31AD-2D92AB7080C6">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:54:37 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Moc_Km" id="475E2CB2-B371-3496-8FC5-1E5E848D31B1">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:55:20 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Typ_Skrzyni" id="4D1A8433-B548-664A-4F67-8FCA030028E1">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:55:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Ostatniego_Przegladu" id="50AAA1F7-AC92-1B2B-3C15-A408538B7AE8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:55:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Czy_Dostepny" id="974168C6-BB64-023B-8DED-4FB120303631">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:56:17 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B1187196-279C-AAB6-1A70-C9088BB02B7B" name="p_72_Samochod PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:18:37 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DEF2FDB3-B8DE-9DE3-5658-7D850F21FB44</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="35BAE3A4-567E-5A4C-AB5A-56A35479057D" name="uq_Samochod_VIN">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:20:51 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<newElementsIDs>F685AA41-137F-2508-5B90-80822D636E8D</newElementsIDs>
+<usedAttributes>
+<attributeRef>F685AA41-137F-2508-5B90-80822D636E8D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5BC862E7-7F19-532E-0B98-74B75A06D177" name="uq_Samochod_Numer_Rejestracyjny">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:26:41 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<newElementsIDs>338ECEC8-3CBE-2E8E-9697-E93C8217FE56</newElementsIDs>
+<usedAttributes>
+<attributeRef>338ECEC8-3CBE-2E8E-9697-E93C8217FE56</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

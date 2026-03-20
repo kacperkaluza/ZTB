@@ -24,26 +24,124 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Klienta" id="5F73CA72-4072-9B3F-E8D1-46BD4FF4D133">
+<Attribute name="ID_Statusu" id="93E725CD-3684-6089-DA33-806092BBCBFB">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-18 12:04:03 UTC</createdTime>
+<createdTime>2026-03-19 10:51:32 UTC</createdTime>
+<generatorID>A7B73AC0-EB1F-CE1A-5488-725AAB6399E0</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
 </engineerTo>
+<referedAttribute>BED20622-B462-84B3-EB81-59BEDD8CC8BC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Pracownika" id="F5A9D734-2FBC-6FAE-4104-06221394363B">
+<Attribute name="ID_Samochod" id="AFBA8CE2-8677-0D04-F5F8-3D6ECA7C7E22">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-18 12:05:29 UTC</createdTime>
+<createdTime>2026-03-19 12:12:19 UTC</createdTime>
+<generatorID>DF03D1E5-DF51-4DDC-0BE1-32A207AD29A1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>DEF2FDB3-B8DE-9DE3-5658-7D850F21FB44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Klient" id="F70098A9-0783-648C-DAF1-11B3210E1EBA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:12:31 UTC</createdTime>
+<generatorID>DACF49EE-AE00-FF7B-DD5D-CD33D2B91CA4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>DE91E06A-FA89-0BE5-6F2F-DF90EF90BB6D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Oddzial_Wydania" id="38C99927-5CDE-3F60-9CB8-FCA2C7AE0D5F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:12:37 UTC</createdTime>
+<generatorID>03A4147F-1AE6-13A2-F435-C173F2525415</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>7C70604F-7402-210F-EE65-367656241A33</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Oddzial_Odbioru" id="F05B8BA5-0CE4-5C53-4E01-9BE2B44618F8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:13:18 UTC</createdTime>
+<generatorID>2734C925-180A-EEF2-6893-C4F92E6DE545</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>7C70604F-7402-210F-EE65-367656241A33</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Ubezpieczenie" id="D8183D6E-38E7-3E9F-A56F-8C3DF6E1ABD6">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:03:35 UTC</createdTime>
+<generatorID>E919B10B-E932-3F98-B946-5A251E18338F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>C7E3B705-D95A-8BD4-F443-52ED8D7B161C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Pracownik_Wydania" id="92813699-1968-2F87-560E-4800C4BF6AD2">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:24:49 UTC</createdTime>
+<generatorID>A46EEE25-B96F-BAB6-4A17-B9948973485E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>8B515754-AA3D-45BB-11F3-42452F975B9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Pracownik_Odbioru" id="C8C0BB1E-58EA-32F2-173B-96B0712B0051">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:14:38 UTC</createdTime>
+<generatorID>CFE34337-3BBC-D90B-EFAC-53D65434B00A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>8B515754-AA3D-45BB-11F3-42452F975B9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Wydania" id="A75D3DB6-40E0-1D6B-330C-B4122C161F7D">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 09:36:54 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
@@ -51,13 +149,12 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Samochodu" id="C232C8A4-1007-5492-AA5B-CACB8AD8322F">
+<Attribute name="Data_Planowanego_Zwrotu" id="AA43BE19-0A1C-44A5-B892-13F6CE3CD8C1">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-18 12:06:06 UTC</createdTime>
+<createdTime>2026-03-19 09:39:08 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
@@ -65,13 +162,12 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Statusu" id="D847DAA9-DDAE-048F-18F4-FF590F5DB2C5">
+<Attribute name="Data_Faktycznego_Zwrotu" id="0BFC1126-B612-9B22-3284-9AA4F5333501">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-18 12:06:21 UTC</createdTime>
+<createdTime>2026-03-19 09:39:30 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
@@ -79,13 +175,12 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_Ubezpieczenia" id="396A81D4-9D62-E396-D339-2AFFB0885B60">
+<Attribute name="Uwagi" id="D3A8BCC8-B0D3-79FE-8DB2-4927B5BEFC85">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-18 12:06:49 UTC</createdTime>
+<createdTime>2026-03-19 10:44:21 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
@@ -93,9 +188,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

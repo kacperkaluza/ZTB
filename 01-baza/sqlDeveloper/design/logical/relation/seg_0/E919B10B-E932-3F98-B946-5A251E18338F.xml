@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Wypozyczenia_Ubezpieczenie" directorySegmentName="seg_0" id="E919B10B-E932-3F98-B946-5A251E18338F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:03:35 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>EDA4EB6E-7205-22D7-1B82-2B3C81A5D04B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>00DF20A3-1662-3200-8F32-AB2EF8E65F37</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>107A448C-BDF4-DADD-5B8C-3987E46838DE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

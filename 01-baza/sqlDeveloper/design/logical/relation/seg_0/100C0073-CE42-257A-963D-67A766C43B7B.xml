@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Pracownik_Stanowisko\" directorySegmentName="seg_0" id="100C0073-CE42-257A-963D-67A766C43B7B">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:17:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>154D6ADB-D107-937F-2719-DD76C70E0650</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5A93893C-F2D5-A753-2C46-B0AA068ADC9A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E37F628D-6CBC-5B68-CB4C-BACAF9397A17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

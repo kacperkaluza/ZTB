@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D2A08F7-6DA1-B794-B5D0-82EAF346B574" name="p_72_Osoba">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:22:24 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Osoba" id="2AEEF5AB-E1F6-4968-FD87-6D51BC7F8E9A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:22:33 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Adres" id="5C0FB24F-F737-F9D3-E62D-C1520099503C">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:48:37 UTC</createdTime>
+<generatorID>03670BBC-8F77-E387-D8B5-85651F265242</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>5FF7A975-6208-6FC0-5599-E66798D49079</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Imie" id="2A8D71EB-87E5-6F30-C511-1AFA85F4D315">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:28:36 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwisko" id="9823D90D-A219-CDD1-FCF1-C298AF4735E4">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:29:12 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL" id="0F5FCA1D-B78E-D81B-0DB5-01E52FA748CE">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:29:27 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefon" id="70EF70A3-4F58-A3DB-E15E-91878F7CB7E0">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:09:50 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="E9D44311-D6BA-8C71-8129-D8D425249C41">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:10:58 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="53443505-88AA-DCE3-1D15-93444569491A" name="p_72_Osoba PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:22:41 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2AEEF5AB-E1F6-4968-FD87-6D51BC7F8E9A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A41C3E29-D082-877A-5527-259001C92B3D" name="uq_Osoba_PESEL">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:32:06 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<newElementsIDs>0F5FCA1D-B78E-D81B-0DB5-01E52FA748CE</newElementsIDs>
+<usedAttributes>
+<attributeRef>0F5FCA1D-B78E-D81B-0DB5-01E52FA748CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

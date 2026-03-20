@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Wypozyczenia_Pracownik_Zwrotu" directorySegmentName="seg_0" id="A46EEE25-B96F-BAB6-4A17-B9948973485E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 14:24:49 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>896787F0-F699-FAF8-6BCF-9418E07045FA</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Zwrotu</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E37F628D-6CBC-5B68-CB4C-BACAF9397A17</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>107A448C-BDF4-DADD-5B8C-3987E46838DE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Samochod_Typ_Paliwa" directorySegmentName="seg_0" id="BE95BCEE-A637-F9D1-F0E1-B42B4E92E7EA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:02:42 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>44E94ED3-ED36-AC00-14A0-0312AA2F21C8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E17426C8-D5E7-CCDB-F677-BE5691DC87BC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6EFA6BA-D197-46B9-FF24-10B3032F7370</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

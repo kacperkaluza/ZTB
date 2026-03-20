@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A653A786-4993-A93B-66CD-97CE85701913" name="p_72_Wojewodztwo">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:41:55 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Wojewodztwo" id="BCA90F0C-AAC4-9510-F9E4-F01E90CF133A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:42:18 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa_Wojewodztwa" id="652C5AE0-59C0-40E3-6B7F-48C6561E0725">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:42:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Panstwa" id="B838FC99-E688-7FF4-5E7A-DEC5484F40B4">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:47:01 UTC</createdTime>
+<generatorID>1256940E-CF1B-C45E-F618-14DD6725CEB5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>8D80C3F1-0ECA-1DB0-725A-A112F42C6832</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D3D5BBF-4B98-EAEB-D499-5DEFF371CF7C" name="p_72_Wojewodztwo PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:42:54 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCA90F0C-AAC4-9510-F9E4-F01E90CF133A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

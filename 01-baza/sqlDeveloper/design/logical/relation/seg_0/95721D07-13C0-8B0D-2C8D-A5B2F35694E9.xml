@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Platnosc_Metoda_Platnosci" directorySegmentName="seg_0" id="95721D07-13C0-8B0D-2C8D-A5B2F35694E9">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:21:22 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>8DF7C689-59C8-2C11-F243-C6DF46B8E79C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DD5A50AF-7712-002A-E41A-DB6CC5568C68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0C8B2EBB-B0FB-3A10-83FA-67DD4955AA79</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

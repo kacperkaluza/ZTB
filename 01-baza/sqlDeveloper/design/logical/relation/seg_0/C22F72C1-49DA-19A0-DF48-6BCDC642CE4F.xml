@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Typ_Ubezpieczenie" directorySegmentName="seg_0" id="C22F72C1-49DA-19A0-DF48-6BCDC642CE4F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:08:20 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>18912B9F-D4CB-EC87-5035-2DC9ACDD2F01</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>71673266-75DD-F6B2-19FD-FB06337A1CFF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00DF20A3-1662-3200-8F32-AB2EF8E65F37</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

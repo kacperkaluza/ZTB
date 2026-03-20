@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Ulica_Miasto" directorySegmentName="seg_0" id="0337CABB-5BA2-4524-EB97-1EDB0B20BFA4">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 13:49:36 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>E3D2B2E5-AF19-AE95-B7C2-653EA8C34142</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C83959AF-CAF1-E47A-0E50-4691753478C6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8CD81F37-81DE-5632-D376-06168434E1DF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

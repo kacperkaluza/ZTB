@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Wojewodztwo_Panstwo" directorySegmentName="seg_0" id="1256940E-CF1B-C45E-F618-14DD6725CEB5">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 11:44:46 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>1C40F055-5ADD-CC39-7E3A-E4EA43F15630</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4BCD0CB1-BACD-2DB6-D0C3-07DE3FE76F95</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A653A786-4993-A93B-66CD-97CE85701913</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

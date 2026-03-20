@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="rel_72_Samochod_Kolor" directorySegmentName="seg_0" id="EE9BBA5C-FBBC-303D-63BA-C19AFD798EDA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 12:26:03 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<sourcePk>F3D70D02-52D9-6615-CAD7-AC89842DE31F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32F2286F-6EFB-27AE-7C78-E044D197F025</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6EFA6BA-D197-46B9-FF24-10B3032F7370</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

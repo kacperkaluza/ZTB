@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0C8B2EBB-B0FB-3A10-83FA-67DD4955AA79" name="p_72_Platnosc">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 09:58:37 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Platnosci" id="ADEC39C9-0667-3007-E0DF-F89FB4D5053B">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 09:58:53 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Metody_Platnosci" id="F7CD5F50-9E0A-F920-3F11-808834828A5A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:21:22 UTC</createdTime>
+<generatorID>95721D07-13C0-8B0D-2C8D-A5B2F35694E9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<referedAttribute>BFB53B73-96D1-95A2-54F3-B2EA4E283823</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Wypozyczenia" id="4B253F5A-CEA8-2AD8-2165-379AA1686200">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:33:21 UTC</createdTime>
+<generatorID>07387380-0EFC-5548-3AE1-01F15E62B616</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>09A821F5-9701-77DB-4F0D-DA2B16B14016</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kwota" id="3CF0A32D-A8AC-D985-2C62-EE1F2EEAE2CD">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 09:59:21 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Platnosci" id="34A4C0D3-12C9-8428-7A4E-D0E224D082DA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:00:01 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer_Transakcji" id="45917432-76BB-8021-8A25-6D4C4F0B37BA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:00:26 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Czy_Zwrot" id="AA9BFDF3-F8D2-9EF1-9CEB-8D256D7BC297">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 10:01:01 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="40706375-96C9-3059-C1E0-7B924A464A1A" name="p_72_Platnosc PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-19 09:59:07 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="EF432974-C3FF-BC5A-C515-109D151E9506" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ADEC39C9-0667-3007-E0DF-F89FB4D5053B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
