@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="557E9D14-790D-9714-1CF2-4D575F491D68" containerWithKeyObject="EADE4EB4-7B7E-FC98-9093-B2954826DE8A" localFKIndex="46F71A4A-2784-B3E8-1041-9CFFB2183087" name="p_72_Samochod_p_72_Typ_Paliwa_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>BE95BCEE-A637-F9D1-F0E1-B42B4E92E7EA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Typ_Paliwa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C4E34D4-1BCF-8589-EBA6-88B8A0EF3FF2</referredTableID>
+<keyObject>7D6C106F-1074-B42A-BAC5-7EF031378173</keyObject>
+<referredKeyID>7D6C106F-1074-B42A-BAC5-7EF031378173</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Typu_Paliwa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

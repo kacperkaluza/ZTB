@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="88B96524-6BB7-72AF-B149-9C15C13674D2" containerWithKeyObject="66D0E939-8409-66DC-369B-405C643F6CF1" localFKIndex="6A9C91AA-03F4-0B1F-3A62-709D34E81A44" name="p_72_Marka_p_72_Panstwo_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>7BC37D5C-1AB0-0B49-21F2-4F46FF24487D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Panstwo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>56318B7F-1447-975D-37BA-88259B494D37</referredTableID>
+<keyObject>46BF8FFD-8C09-4730-A1F8-CE04D537279A</keyObject>
+<referredKeyID>46BF8FFD-8C09-4730-A1F8-CE04D537279A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Panstwa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

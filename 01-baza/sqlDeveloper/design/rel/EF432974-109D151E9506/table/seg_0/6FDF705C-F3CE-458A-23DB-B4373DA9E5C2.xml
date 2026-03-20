@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FDF705C-F3CE-458A-23DB-B4373DA9E5C2" name="p_72_Miasto">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>C83959AF-CAF1-E47A-0E50-4691753478C6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Miasta" id="67847659-AABF-001E-FD8A-B90BE4CF3EFB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>403265A6-6FA7-E69A-956F-BEDD9D048431</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="p_72_Wojewodztwo_ID_Wojewodztwo" id="35B153C6-7F6C-C095-B3FD-AF1ECDE8C977">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>26D275C2-594E-C4EB-B430-AFBD196AB5C2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF03E6E6-F081-2001-7727-F5397C4AB755" referredColumn="F0113CF8-75F0-A07D-83A7-350CEBF9B492"/>
+</associations>
+</Column>
+<Column name="Nazwa_Miasta" id="E3CFE8C0-8F3B-DB32-1DC5-5EBEC575ECA5">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>59E66959-EA96-446D-00DC-FE4BF2F595CA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6428D7E-8E9A-D97F-D1C0-60E2AFBBC19A" name="p_72_Miasto_PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>E3D2B2E5-AF19-AE95-B7C2-653EA8C34142</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67847659-AABF-001E-FD8A-B90BE4CF3EFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77D2F5C4-63FE-6A68-DE77-DDDDEDD1B26C" name="p_72_Miasto_p_72_Wojewodztwo_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>CB05993E-7D2B-D042-6CA0-CC48DBDA9D18</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35B153C6-7F6C-C095-B3FD-AF1ECDE8C977"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

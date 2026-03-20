@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A276152F-B18B-AB8C-1254-F0852ECF17E7" containerWithKeyObject="02CCBA88-EC25-6ECB-E0D7-E7BAC85F3DA4" localFKIndex="0FC65BB7-7067-844B-A889-B193189E807B" name="p_72_Wypozyczenia_p_72_Oddzial_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>2734C925-180A-EEF2-6893-C4F92E6DE545</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Oddzial</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2BCFD01E-6753-7CB9-530B-21DA2CB21CB6</referredTableID>
+<keyObject>D1AFD37C-FC8A-F6EC-4648-A815A7548366</keyObject>
+<referredKeyID>D1AFD37C-FC8A-F6EC-4648-A815A7548366</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Oddzial</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86B7C6C6-8480-D703-83BE-449AF6364318" containerWithKeyObject="AC56B649-42DB-EDD9-A575-E6FEAADF1243" localFKIndex="6D02B7A7-9099-345A-7222-1C64D0FAA386" name="p_72_Platnosc_p_72_Metoda_Platnosci_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>95721D07-13C0-8B0D-2C8D-A5B2F35694E9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Metoda_Platnosci</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA61D389-9BAC-8B39-416A-507824CF48DE</referredTableID>
+<keyObject>CD8B8C06-2CE9-E10E-C56C-035B22361707</keyObject>
+<referredKeyID>CD8B8C06-2CE9-E10E-C56C-035B22361707</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Metody_Platnosci</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

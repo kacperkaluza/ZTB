@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66D0E939-8409-66DC-369B-405C643F6CF1" name="p_72_Marka">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>6F538FAD-2CED-5314-F746-33A0510065DB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Marka" id="A77F77C5-7439-ACB5-DD0F-96AA3F8DA64E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>56107F93-87F4-F9BE-F2E2-845EED8F8FCB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="p_72_Panstwo_ID_Panstwa" id="7C2D662B-5B05-26F3-9186-AC3BA768D7D8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>12716EAB-BB5C-2418-63C1-0B07A1D65BB8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88B96524-6BB7-72AF-B149-9C15C13674D2" referredColumn="92EB7C1F-8338-6FB6-C3D9-EF664B3D5194"/>
+</associations>
+</Column>
+<Column name="Nazwa_Marki" id="F3C81B76-80DD-7EFD-8C8D-706D5B05D358">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>F96FB70D-5680-E403-DEB5-0147C3BB1E20</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD4A25CD-91CA-BA9F-1F5A-1ADB305CABF7" name="p_72_Marka_PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>61957268-FD67-D251-8A1F-BCF0746178E3</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A77F77C5-7439-ACB5-DD0F-96AA3F8DA64E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A9C91AA-03F4-0B1F-3A62-709D34E81A44" name="p_72_Marka_p_72_Panstwo_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>7BC37D5C-1AB0-0B49-21F2-4F46FF24487D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C2D662B-5B05-26F3-9186-AC3BA768D7D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

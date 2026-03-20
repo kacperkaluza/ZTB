@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC56B649-42DB-EDD9-A575-E6FEAADF1243" name="p_72_Platnosc">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>0C8B2EBB-B0FB-3A10-83FA-67DD4955AA79</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Platnosci" id="79401EF8-FD8B-E275-9938-DAC43D24A517">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>ADEC39C9-0667-3007-E0DF-F89FB4D5053B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="p_72_Metoda_Platnosci_ID_Metody_Platnosci" id="F8CC6F40-87E2-8462-BC27-F11676CA9F09">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>F7CD5F50-9E0A-F920-3F11-808834828A5A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86B7C6C6-8480-D703-83BE-449AF6364318" referredColumn="8D0FE20E-67B9-4F00-879E-47990616174E"/>
+</associations>
+</Column>
+<Column name="p_72_Wypozyczenia_ID_Wypozyczenia" id="E4AB4ECC-546E-51B6-54C5-1A9859C93300">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>4B253F5A-CEA8-2AD8-2165-379AA1686200</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="604C70E8-457F-DFB7-B898-BF20D13B0DEC" referredColumn="32E3A4F6-5DF7-616E-C2B2-F8D40CF8F309"/>
+</associations>
+</Column>
+<Column name="Kwota" id="50857D97-F7A1-D5FF-E73A-9DC146FE7E51">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>3CF0A32D-A8AC-D985-2C62-EE1F2EEAE2CD</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Platnosci" id="CB3169A0-31D9-F05E-DC26-457D313B3B00">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>34A4C0D3-12C9-8428-7A4E-D0E224D082DA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_Transakcji" id="C8E7AEBA-CF70-E839-C792-E8F49AD8ED72">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>45917432-76BB-8021-8A25-6D4C4F0B37BA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_Zwrot" id="12B68DA8-1CAF-CF4B-DBB6-C91872C90EE7">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>AA9BFDF3-F8D2-9EF1-9CEB-8D256D7BC297</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF77EBA4-966D-EC1F-CEF9-19D2C650988D" name="p_72_Platnosc_PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>40706375-96C9-3059-C1E0-7B924A464A1A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79401EF8-FD8B-E275-9938-DAC43D24A517"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D02B7A7-9099-345A-7222-1C64D0FAA386" name="p_72_Platnosc_p_72_Metoda_Platnosci_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>95721D07-13C0-8B0D-2C8D-A5B2F35694E9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8CC6F40-87E2-8462-BC27-F11676CA9F09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E65D9C7-CFEA-052E-D2CF-DC414D1AAE99" name="p_72_Platnosc_p_72_Wypozyczenia_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>07387380-0EFC-5548-3AE1-01F15E62B616</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4AB4ECC-546E-51B6-54C5-1A9859C93300"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

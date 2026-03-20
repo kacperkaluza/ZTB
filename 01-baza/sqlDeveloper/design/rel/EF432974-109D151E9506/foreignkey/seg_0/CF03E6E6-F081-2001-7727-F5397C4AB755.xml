@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF03E6E6-F081-2001-7727-F5397C4AB755" containerWithKeyObject="6FDF705C-F3CE-458A-23DB-B4373DA9E5C2" localFKIndex="77D2F5C4-63FE-6A68-DE77-DDDDEDD1B26C" name="p_72_Miasto_p_72_Wojewodztwo_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>CB05993E-7D2B-D042-6CA0-CC48DBDA9D18</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Wojewodztwo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EBCFE8F5-6205-4E08-5EDF-20DD124E2D39</referredTableID>
+<keyObject>0A89AE0B-70BE-D4B2-5F2B-6D173EE4D3C2</keyObject>
+<referredKeyID>0A89AE0B-70BE-D4B2-5F2B-6D173EE4D3C2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Wojewodztwo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

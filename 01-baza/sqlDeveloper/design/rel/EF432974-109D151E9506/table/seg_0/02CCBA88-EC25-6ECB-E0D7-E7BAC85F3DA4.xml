@@ -1,0 +1,294 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02CCBA88-EC25-6ECB-E0D7-E7BAC85F3DA4" name="p_72_Wypozyczenia">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>107A448C-BDF4-DADD-5B8C-3987E46838DE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Wypozyczenia" id="32E3A4F6-5DF7-616E-C2B2-F8D40CF8F309">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>09A821F5-9701-77DB-4F0D-DA2B16B14016</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="p_72_Status_Wypozyczenia_ID_Statusu" id="DD5E226B-7D4A-4E21-939F-62FDEC670EA8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>93E725CD-3684-6089-DA33-806092BBCBFB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E21C220-CFF7-E132-5B35-BCEBFAB6E13E" referredColumn="3131F517-D63D-305E-F656-E132EA7AFF37"/>
+</associations>
+</Column>
+<Column name="p_72_Samochod_ID_Samochod" id="9126B191-1F87-57AA-1B45-9ED36D0327C3">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>AFBA8CE2-8677-0D04-F5F8-3D6ECA7C7E22</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="144F9339-E8CC-4F84-448D-095D26566969" referredColumn="4A769A0C-D0CF-3CCE-23AC-7012CC182AEF"/>
+</associations>
+</Column>
+<Column name="p_72_Klient_ID_Klient" id="5B80F04F-2EF8-7BF0-AE62-9D4C0EE4F0B2">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>F70098A9-0783-648C-DAF1-11B3210E1EBA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09B3980C-C155-F606-1A71-19C49D74FF79" referredColumn="0455C494-37F7-3A66-2FCB-122570872850"/>
+</associations>
+</Column>
+<Column name="p_72_Oddzial_ID_Oddzial2" id="EF7C200F-BD03-3962-A2B1-D06933737B43">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>38C99927-5CDE-3F60-9CB8-FCA2C7AE0D5F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="662956E6-41F7-9B85-0422-1A0D3C510B9F" referredColumn="A541D19B-286B-E3C4-C22B-D40E0CE72BD2"/>
+</associations>
+</Column>
+<Column name="p_72_Oddzial_ID_Oddzial" id="A1660421-88CD-8017-FCCB-F49314193238">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>F05B8BA5-0CE4-5C53-4E01-9BE2B44618F8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A276152F-B18B-AB8C-1254-F0852ECF17E7" referredColumn="A541D19B-286B-E3C4-C22B-D40E0CE72BD2"/>
+</associations>
+</Column>
+<Column name="p_72_Ubezpieczenie_ID_Ubezpieczenie" id="A1298FC4-7B6D-D258-60D9-CC06AA8EA18E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>D8183D6E-38E7-3E9F-A56F-8C3DF6E1ABD6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0642A255-215D-1CDE-2311-B80309E4D27D" referredColumn="F4544AEF-EF7F-260D-D662-AA640476699F"/>
+</associations>
+</Column>
+<Column name="p_72_Pracownik_ID_Pracownik2" id="7427ACBD-13BF-5431-F46D-8FA9D7C849D2">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>92813699-1968-2F87-560E-4800C4BF6AD2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="350034B8-91EF-BF16-CC3E-F0C2101F647C" referredColumn="50952C3F-C72F-6A1A-9E81-C6480B6BB093"/>
+</associations>
+</Column>
+<Column name="p_72_Pracownik_ID_Pracownik" id="C3812C43-969F-A1D2-DCDA-E052873803F4">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>C8C0BB1E-58EA-32F2-173B-96B0712B0051</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="777DCFE5-606F-7EC0-CE6A-B06D314DE04D" referredColumn="50952C3F-C72F-6A1A-9E81-C6480B6BB093"/>
+</associations>
+</Column>
+<Column name="Data_Wydania" id="5240EFD6-5744-F374-5039-C664EB9B40AB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>A75D3DB6-40E0-1D6B-330C-B4122C161F7D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Planowanego_Zwrotu" id="64E9559A-56BC-4524-E9E4-43BF3C62FA24">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>AA43BE19-0A1C-44A5-B892-13F6CE3CD8C1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Faktycznego_Zwrotu" id="B7602F2B-BF9F-95C1-3842-E68B239D5FFA">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>0BFC1126-B612-9B22-3284-9AA4F5333501</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Uwagi" id="53A04A5C-089C-FD6D-191E-2511F97F1C06">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>D3A8BCC8-B0D3-79FE-8DB2-4927B5BEFC85</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2527B37-9D0D-366C-1CAE-C7F476B0485C" name="p_72_Wypozyczenia_PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>36DF9808-84A5-49DE-A5C4-DB82FF569BAE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32E3A4F6-5DF7-616E-C2B2-F8D40CF8F309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="475D13A6-58B9-E69D-0FD3-6F7F7D280E80" name="p_72_Wypozyczenia_p_72_Klient_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>DACF49EE-AE00-FF7B-DD5D-CD33D2B91CA4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B80F04F-2EF8-7BF0-AE62-9D4C0EE4F0B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FC65BB7-7067-844B-A889-B193189E807B" name="p_72_Wypozyczenia_p_72_Oddzial_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>2734C925-180A-EEF2-6893-C4F92E6DE545</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1660421-88CD-8017-FCCB-F49314193238"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A0FB0E7-368C-4BB2-5362-5EA7FA44C500" name="p_72_Wypozyczenia_p_72_Oddzial_FKv2">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>03A4147F-1AE6-13A2-F435-C173F2525415</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF7C200F-BD03-3962-A2B1-D06933737B43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9747F5FE-AFE0-A40F-05A8-0C4B559DA661" name="p_72_Wypozyczenia_p_72_Pracownik_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>CFE34337-3BBC-D90B-EFAC-53D65434B00A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3812C43-969F-A1D2-DCDA-E052873803F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7643F348-754F-FE4C-7159-4337F6CB2151" name="p_72_Wypozyczenia_p_72_Pracownik_FKv2">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>A46EEE25-B96F-BAB6-4A17-B9948973485E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7427ACBD-13BF-5431-F46D-8FA9D7C849D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F4E7DD-1DA5-16D7-E317-C9EAB005BC45" name="p_72_Wypozyczenia_p_72_Samochod_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>DF03D1E5-DF51-4DDC-0BE1-32A207AD29A1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9126B191-1F87-57AA-1B45-9ED36D0327C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="997863DC-98C0-C70E-4403-3BAE0FDB8E63" name="p_72_Wypozyczenia_p_72_Status_Wypozyczenia_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>A7B73AC0-EB1F-CE1A-5488-725AAB6399E0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD5E226B-7D4A-4E21-939F-62FDEC670EA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56D5E4E2-EAA0-E157-0B87-842081671532" name="p_72_Wypozyczenia_p_72_Ubezpieczenie_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>E919B10B-E932-3F98-B946-5A251E18338F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1298FC4-7B6D-D258-60D9-CC06AA8EA18E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

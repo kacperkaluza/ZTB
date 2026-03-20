@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7F9C1B2F-4FB7-0F30-6F7E-D56BC7048678" containerWithKeyObject="EADE4EB4-7B7E-FC98-9093-B2954826DE8A" localFKIndex="1B549150-A2AD-30FA-C6F4-D8928C79BF08" name="p_72_Samochod_p_72_Model_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>65D8EC67-30C1-4468-D490-E15483BFFD51</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Model</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>710A84E8-D72D-3F62-C57E-8DFAD7345FE2</referredTableID>
+<keyObject>2953E337-6025-2F38-C411-EB2FCB8C3631</keyObject>
+<referredKeyID>2953E337-6025-2F38-C411-EB2FCB8C3631</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Model</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

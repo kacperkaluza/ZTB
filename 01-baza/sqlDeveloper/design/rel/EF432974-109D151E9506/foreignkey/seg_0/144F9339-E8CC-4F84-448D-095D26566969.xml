@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="144F9339-E8CC-4F84-448D-095D26566969" containerWithKeyObject="02CCBA88-EC25-6ECB-E0D7-E7BAC85F3DA4" localFKIndex="81F4E7DD-1DA5-16D7-E317-C9EAB005BC45" name="p_72_Wypozyczenia_p_72_Samochod_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>DF03D1E5-DF51-4DDC-0BE1-32A207AD29A1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Samochod</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EADE4EB4-7B7E-FC98-9093-B2954826DE8A</referredTableID>
+<keyObject>985A6F43-9FE0-848F-1472-CBA0798F5B87</keyObject>
+<referredKeyID>985A6F43-9FE0-848F-1472-CBA0798F5B87</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Samochod</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

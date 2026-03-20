@@ -1,0 +1,292 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EADE4EB4-7B7E-FC98-9093-B2954826DE8A" name="p_72_Samochod">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>E6EFA6BA-D197-46B9-FF24-10B3032F7370</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Samochod" id="4A769A0C-D0CF-3CCE-23AC-7012CC182AEF">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>DEF2FDB3-B8DE-9DE3-5658-7D850F21FB44</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="p_72_Typ_Paliwa_ID_Typu_Paliwa" id="E196B213-5396-6D47-016A-E428C7879936">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>52BDEF3C-A4C2-1377-154F-7CCDDA535EBB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="557E9D14-790D-9714-1CF2-4D575F491D68" referredColumn="10E55A87-28EB-A705-5208-A06F053A9FC5"/>
+</associations>
+</Column>
+<Column name="p_72_Kolor_ID_Kolor" id="D39B0E7E-29FA-3E24-2668-091A6BA0C375">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>59465C27-D214-6E4F-C37F-E63CD38BD7C5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="985CAFEF-3BBC-503E-2836-8FA495048DA8" referredColumn="71A00890-710B-A787-2CB0-FB1924CE5621"/>
+</associations>
+</Column>
+<Column name="p_72_Kategoria_ID_Kategoria" id="DED32894-4C9D-C11C-A3BE-C639A1A00B65">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>C6077150-56EB-985F-6342-D0AA1DEB13B1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0914CD1-5F7D-C31A-BB29-E0F5E3203B30" referredColumn="A7F8C74C-88C8-C668-1076-2ACECE9E538C"/>
+</associations>
+</Column>
+<Column name="p_72_Model_ID_Model" id="FC335AF0-9BC8-DB9E-F780-7F5B63C648CE">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>3E2F380E-37C7-3F29-B48C-9CA0537CDD49</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F9C1B2F-4FB7-0F30-6F7E-D56BC7048678" referredColumn="7E38200F-24F3-AA31-CB40-40FCF77119F2"/>
+</associations>
+</Column>
+<Column name="Numer_Rejestracyjny" id="E0415A72-65D7-DB6F-EEC2-7C5331D1010C">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>338ECEC8-3CBE-2E8E-9697-E93C8217FE56</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numer_VIN" id="FF931D8C-2651-2E63-36BF-E59A83F91CB9">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>F685AA41-137F-2508-5B90-80822D636E8D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17 CHAR</dataTypeSize>
+<ownDataTypeParameters>17 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rok_Produkcji" id="C5E4D077-BD66-CD60-41EE-C1793F5B8E60">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>9434555A-78FC-1AE4-65D9-3815BC134844</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przebieg_Km" id="9660A36A-B93E-6CFE-2BDC-4B6A1BC54B7A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>1EAF0A85-440D-02F4-74A4-28574748DCAB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Liczba_Miejsc" id="4570CED1-E270-C8AC-93C6-37265EF65142">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>AF72973B-E280-CA95-3894-155D4F0B4AC8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pojemnosc_Silnika_cm3" id="DCC6EDC4-461E-0CB8-ACA3-77B7342E33D5">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>C6066C1E-67D1-05DA-31AD-2D92AB7080C6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Moc_Km" id="EDCE3C94-3DFC-BB32-8323-CBDBCF7057BB">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>475E2CB2-B371-3496-8FC5-1E5E848D31B1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Typ_Skrzyni" id="96B6F079-9829-F20C-F1FC-DB7897082F86">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>4D1A8433-B548-664A-4F67-8FCA030028E1</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Ostatniego_Przegladu" id="0E86E1DB-D1D2-9E0D-AEF1-4B0E01BA0BB8">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>50AAA1F7-AC92-1B2B-3C15-A408538B7AE8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_Dostepny" id="C9A62B08-51BF-6D41-5ADF-3F35450BE96E">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>974168C6-BB64-023B-8DED-4FB120303631</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="985A6F43-9FE0-848F-1472-CBA0798F5B87" name="p_72_Samochod_PK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>B1187196-279C-AAB6-1A70-C9088BB02B7B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A769A0C-D0CF-3CCE-23AC-7012CC182AEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B8947DB-2F5C-DED9-8372-672B85B8846E" name="p_72_Samochod_Numer_VIN_UN">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>35BAE3A4-567E-5A4C-AB5A-56A35479057D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF931D8C-2651-2E63-36BF-E59A83F91CB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78EDEA91-26FA-E016-72F8-BCDDCF965B22" name="p_72_Samochod_Numer_Rejestracyjny_UN">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>5BC862E7-7F19-532E-0B98-74B75A06D177</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0415A72-65D7-DB6F-EEC2-7C5331D1010C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1A34CC8-51FF-B7C6-203B-F662B378D394" name="p_72_Samochod_p_72_Kategoria_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>49DEECB3-D10E-97AA-FF34-F7CC4C5724D7</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DED32894-4C9D-C11C-A3BE-C639A1A00B65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="450541CB-C282-EE61-FAA3-B370958AD7D4" name="p_72_Samochod_p_72_Kolor_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>EE9BBA5C-FBBC-303D-63BA-C19AFD798EDA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D39B0E7E-29FA-3E24-2668-091A6BA0C375"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B549150-A2AD-30FA-C6F4-D8928C79BF08" name="p_72_Samochod_p_72_Model_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>65D8EC67-30C1-4468-D490-E15483BFFD51</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC335AF0-9BC8-DB9E-F780-7F5B63C648CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46F71A4A-2784-B3E8-1041-9CFFB2183087" name="p_72_Samochod_p_72_Typ_Paliwa_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>BE95BCEE-A637-F9D1-F0E1-B42B4E92E7EA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E196B213-5396-6D47-016A-E428C7879936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
