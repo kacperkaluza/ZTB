@@ -13,8 +13,11 @@
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>8D80C3F1-0ECA-1DB0-725A-A112F42C6832</generatorID>
 <ownerDesignName>design</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nazwa_Panstwa" id="01250919-C6C5-9B31-511A-FA04F6D0969B">
