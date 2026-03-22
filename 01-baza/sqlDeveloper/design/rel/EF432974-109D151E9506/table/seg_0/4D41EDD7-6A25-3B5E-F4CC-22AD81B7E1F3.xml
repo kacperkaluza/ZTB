@@ -17,8 +17,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_Osoba" id="ECBB889C-C631-8982-1BD1-5CA4254DF6EB">
@@ -30,8 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -47,12 +45,28 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="C343F445-200C-631D-E4E5-A499ADD9A5CC" referredColumn="A541D19B-286B-E3C4-C22B-D40E0CE72BD2"/>
+</associations>
+</Column>
+<Column name="ID_Stanowisko" id="736A7E29-2697-A4A8-1996-6D069C25ED12">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>E275BC43-A8C1-5636-D8CF-3AD3629C3089</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39B3FB59-0999-763D-439B-6F450FD2A90C" referredColumn="CDF55100-5163-34B4-4CE6-0B338797A6AE"/>
 </associations>
 </Column>
 <Column name="Data_Zatrudnienia" id="E87C9E66-9936-87D5-5E46-78C355D2D0DB">
@@ -79,23 +93,6 @@
 <dataTypePrecision>1</dataTypePrecision>
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ID_Stanowisko" id="736A7E29-2697-A4A8-1996-6D069C25ED12">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>E275BC43-A8C1-5636-D8CF-3AD3629C3089</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="39B3FB59-0999-763D-439B-6F450FD2A90C" referredColumn="CDF55100-5163-34B4-4CE6-0B338797A6AE"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

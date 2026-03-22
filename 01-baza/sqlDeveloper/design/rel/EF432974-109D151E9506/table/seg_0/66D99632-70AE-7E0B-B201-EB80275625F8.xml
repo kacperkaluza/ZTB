@@ -17,21 +17,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,6,0</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Nazwa_Ulicy" id="CE522BAC-99E6-49D3-87B9-D8D47E533C47">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>A0A5D393-F6B1-9214-E54F-5FC10789875C</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ID_Miasta" id="63369085-8B66-829A-E6E8-4BA426DDD18B">
@@ -50,6 +36,19 @@
 <associations>
 <colAssociation fkAssociation="FDE89365-C29C-3DAF-3C47-23F8175F0127" referredColumn="67847659-AABF-001E-FD8A-B90BE4CF3EFB"/>
 </associations>
+</Column>
+<Column name="Nazwa_Ulicy" id="CE522BAC-99E6-49D3-87B9-D8D47E533C47">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>A0A5D393-F6B1-9214-E54F-5FC10789875C</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
