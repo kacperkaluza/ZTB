@@ -3,7 +3,7 @@
 > [!NOTE]
 > Środowisko docelowe: **Oracle Database (OLTP)**. Schemat znormalizowany do **3NF**.
 > Nazewnictwo: język polski bez polskich znaków diakrytycznych.
-> Łączna liczba tabel: **21**.
+> Łączna liczba tabel: **22**.
 
 ---
 
@@ -20,7 +20,9 @@ erDiagram
     Wypozyczenie }o--|| Oddzial : "N:1 odbioru"
     Wypozyczenie }o--|| Oddzial : "N:1 zwrotu"
 
-    Klient }o--|| Adres : "N:1"
+    Klient }o--|| Osoba : "N:1"
+    Pracownik }o--|| Osoba : "N:1"
+    Osoba }o--|| Adres : "N:1"
     Adres }o--|| Ulica : "N:1"
     Ulica }o--|| Miasto : "N:1"
     Miasto }o--|| Wojewodztwo : "N:1"
@@ -53,21 +55,22 @@ erDiagram
 | 4 | Transakcji | `Typ_Ubezpieczenia` | Słownik typów ubezpieczeń |
 | 5 | Transakcji | `Platnosc` | Rejestr płatności |
 | 6 | Transakcji | `Metoda_Platnosci` | Słownik metod płatności |
-| 7 | Klienta i adresu | `Klient` | Dane klienta |
-| 8 | Klienta i adresu | `Adres` | Pełny adres (łącznik) |
-| 9 | Klienta i adresu | `Ulica` | Słownik ulic |
-| 10 | Klienta i adresu | `Miasto` | Słownik miast |
-| 11 | Klienta i adresu | `Wojewodztwo` | Słownik województw |
-| 12 | Klienta i adresu | `Panstwo` | Słownik państw |
-| 13 | Pojazdu | `Samochod` | Dane pojazdu |
-| 14 | Pojazdu | `Model` | Słownik modeli |
-| 15 | Pojazdu | `Marka` | Słownik marek |
-| 16 | Pojazdu | `Kategoria` | Słownik kategorii pojazdów |
-| 17 | Pojazdu | `Kolor` | Słownik kolorów |
-| 18 | Pojazdu | `Typ_Paliwa` | Słownik typów paliwa |
-| 19 | Pracownika i oddziału | `Pracownik` | Dane pracownika |
-| 20 | Pracownika i oddziału | `Stanowisko` | Słownik stanowisk |
-| 21 | Pracownika i oddziału | `Oddzial` | Dane oddziału wypożyczalni |
+| 7 | Klienta i adresu | `Osoba` | Dane ogólne osoby (klienta/pracownika) |
+| 8 | Klienta i adresu | `Klient` | Dane specyficzne klienta |
+| 9 | Klienta i adresu | `Adres` | Pełny adres (łącznik) |
+| 10 | Klienta i adresu | `Ulica` | Słownik ulic |
+| 11 | Klienta i adresu | `Miasto` | Słownik miast |
+| 12 | Klienta i adresu | `Wojewodztwo` | Słownik województw |
+| 13 | Klienta i adresu | `Panstwo` | Słownik państw |
+| 14 | Pojazdu | `Samochod` | Dane pojazdu |
+| 15 | Pojazdu | `Model` | Słownik modeli |
+| 16 | Pojazdu | `Marka` | Słownik marek |
+| 17 | Pojazdu | `Kategoria` | Słownik kategorii pojazdów |
+| 18 | Pojazdu | `Kolor` | Słownik kolorów |
+| 19 | Pojazdu | `Typ_Paliwa` | Słownik typów paliwa |
+| 20 | Pracownika i oddziału | `Pracownik` | Dane pracownika |
+| 21 | Pracownika i oddziału | `Stanowisko` | Słownik stanowisk |
+| 22 | Pracownika i oddziału | `Oddzial` | Dane oddziału wypożyczalni |
 
 ---
 
@@ -174,26 +177,35 @@ erDiagram
 > Hierarchia adresowa jest w pełni znormalizowana (3NF):
 > **Panstwo → Wojewodztwo → Miasto → Ulica → Adres → Klient / Oddzial**
 
-### 7. `Klient` — Dane Klienta
+### 7. `Osoba` — Dane Ogólne Osoby
+
+| # | Kolumna | Rola | Typ danych | Opis |
+|---|---------|------|------------|------|
+| 1 | `id_osoby` | **PK** | `NUMERIC(8,0)` | Identyfikator osoby |
+| 2 | `id_adresu` | **FK → Adres** | `NUMERIC(8,0)` | Adres zamieszkania |
+| 3 | `imie` | — | `VARCHAR2(50)` | Imię |
+| 4 | `nazwisko` | — | `VARCHAR2(80)` | Nazwisko |
+| 5 | `pesel` | — | `CHAR(11)` | Numer PESEL (unikalny) |
+| 6 | `telefon` | — | `VARCHAR2(20)` | Numer telefonu kontaktowego |
+| 7 | `email` | — | `VARCHAR2(100)` | Adres e-mail |
+
+---
+
+### 8. `Klient` — Dane Klienta
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
 | 1 | `id_klienta` | **PK** | `NUMERIC(8,0)` | Identyfikator klienta |
-| 2 | `id_adresu` | **FK → Adres** | `NUMERIC(8,0)` | Adres zamieszkania |
-| 3 | `imie` | — | `VARCHAR2(50)` | Imię klienta |
-| 4 | `nazwisko` | — | `VARCHAR2(80)` | Nazwisko klienta |
-| 5 | `pesel` | — | `CHAR(11)` | Numer PESEL (unikalny) |
-| 6 | `numer_dowodu` | — | `VARCHAR2(20)` | Numer dokumentu tożsamości |
-| 7 | `numer_prawa_jazdy` | — | `VARCHAR2(20)` | Numer prawa jazdy |
-| 8 | `kategoria_prawa_jazdy` | — | `VARCHAR2(10)` | Kategorie prawa jazdy (np. „B", „B+E") |
-| 9 | `data_waznosci_prawa_jazdy` | — | `DATE` | Data ważności prawa jazdy |
-| 10 | `telefon` | — | `VARCHAR2(20)` | Numer telefonu kontaktowego |
-| 11 | `email` | — | `VARCHAR2(100)` | Adres e-mail |
-| 12 | `data_rejestracji` | — | `DATE` | Data rejestracji klienta w systemie |
+| 2 | `id_osoby` | **FK → Osoba** | `NUMERIC(8,0)` | Dane ogólne osoby |
+| 3 | `numer_dowodu` | — | `VARCHAR2(20)` | Numer dokumentu tożsamości |
+| 4 | `numer_prawa_jazdy` | — | `VARCHAR2(20)` | Numer prawa jazdy |
+| 5 | `kategoria_prawa_jazdy` | — | `VARCHAR2(10)` | Kategorie prawa jazdy (np. „B", „B+E") |
+| 6 | `data_waznosci_prawa_jazdy` | — | `DATE` | Data ważności prawa jazdy |
+| 7 | `data_rejestracji` | — | `DATE` | Data rejestracji klienta w systemie |
 
 ---
 
-### 8. `Adres` — Pełny Adres (Tabela Łącznikowa)
+### 9. `Adres` — Pełny Adres (Tabela Łącznikowa)
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -205,7 +217,7 @@ erDiagram
 
 ---
 
-### 9. `Ulica` — Słownik Ulic
+### 10. `Ulica` — Słownik Ulic
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -215,7 +227,7 @@ erDiagram
 
 ---
 
-### 10. `Miasto` — Słownik Miast
+### 11. `Miasto` — Słownik Miast
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -225,7 +237,7 @@ erDiagram
 
 ---
 
-### 11. `Wojewodztwo` — Słownik Województw
+### 12. `Wojewodztwo` — Słownik Województw
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -235,7 +247,7 @@ erDiagram
 
 ---
 
-### 12. `Panstwo` — Słownik Państw
+### 13. `Panstwo` — Słownik Państw
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -251,7 +263,7 @@ erDiagram
 > Dane pojazdu są znormalizowane do 3NF przez rozbicie na słowniki:
 > **Marka → Model → Samochod**, plus osobne słowniki: **Kategoria**, **Kolor**, **Typ_Paliwa**.
 
-### 13. `Samochod` — Dane Pojazdu
+### 14. `Samochod` — Dane Pojazdu
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -273,7 +285,7 @@ erDiagram
 
 ---
 
-### 14. `Model` — Słownik Modeli Pojazdów
+### 15. `Model` — Słownik Modeli Pojazdów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -283,7 +295,7 @@ erDiagram
 
 ---
 
-### 15. `Marka` — Słownik Marek
+### 16. `Marka` — Słownik Marek
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -293,7 +305,7 @@ erDiagram
 
 ---
 
-### 16. `Kategoria` — Słownik Kategorii Pojazdów
+### 17. `Kategoria` — Słownik Kategorii Pojazdów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -304,7 +316,7 @@ erDiagram
 
 ---
 
-### 17. `Kolor` — Słownik Kolorów
+### 18. `Kolor` — Słownik Kolorów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -313,7 +325,7 @@ erDiagram
 
 ---
 
-### 18. `Typ_Paliwa` — Słownik Typów Paliwa
+### 19. `Typ_Paliwa` — Słownik Typów Paliwa
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -324,24 +336,19 @@ erDiagram
 
 ## IV. Gałąź Pracownika i Oddziału
 
-### 19. `Pracownik` — Dane Pracownika
+### 20. `Pracownik` — Dane Pracownika
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
 | 1 | `id_pracownika` | **PK** | `NUMERIC(4,0)` | Identyfikator pracownika |
-| 2 | `id_stanowiska` | **FK → Stanowisko** | `NUMERIC(2,0)` | Stanowisko służbowe |
-| 3 | `id_oddzialu` | **FK → Oddzial** | `NUMERIC(3,0)` | Oddział macierzysty |
-| 4 | `imie` | — | `VARCHAR2(50)` | Imię pracownika |
-| 5 | `nazwisko` | — | `VARCHAR2(80)` | Nazwisko pracownika |
-| 6 | `pesel` | — | `CHAR(11)` | PESEL pracownika (unikalny) |
-| 7 | `telefon` | — | `VARCHAR2(20)` | Telefon służbowy |
-| 8 | `email` | — | `VARCHAR2(100)` | E-mail służbowy |
-| 9 | `data_zatrudnienia` | — | `DATE` | Data zatrudnienia |
-| 10 | `czy_aktywny` | — | `NUMERIC(1,0)` | Flaga: 1 = aktywny, 0 = nieaktywny |
-
+| 2 | `id_osoby` | **FK → Osoba** | `NUMERIC(8,0)` | Dane ogólne osoby |
+| 3 | `id_stanowiska` | **FK → Stanowisko** | `NUMERIC(2,0)` | Stanowisko służbowe |
+| 4 | `id_oddzialu` | **FK → Oddzial** | `NUMERIC(3,0)` | Oddział macierzysty |
+| 5 | `data_zatrudnienia` | — | `DATE` | Data zatrudnienia |
+| 6 | `czy_aktywny` | — | `NUMERIC(1,0)` | Flaga: 1 = aktywny, 0 = nieaktywny |
 ---
 
-### 20. `Stanowisko` — Słownik Stanowisk
+### 21. `Stanowisko` — Słownik Stanowisk
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -352,7 +359,7 @@ erDiagram
 
 ---
 
-### 21. `Oddzial` — Dane Oddziału Wypożyczalni
+### 22. `Oddzial` — Dane Oddziału Wypożyczalni
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -400,7 +407,8 @@ erDiagram
 | `Platnosc` | `id_wypozyczenia` | `Wypozyczenie` | `id_wypozyczenia` | N : 1 |
 | `Platnosc` | `id_metody_platnosci` | `Metoda_Platnosci` | `id_metody_platnosci` | N : 1 |
 | `Ubezpieczenie` | `id_typu_ubezpieczenia` | `Typ_Ubezpieczenia` | `id_typu_ubezpieczenia` | N : 1 |
-| `Klient` | `id_adresu` | `Adres` | `id_adresu` | N : 1 |
+| `Osoba` | `id_adresu` | `Adres` | `id_adresu` | N : 1 |
+| `Klient` | `id_osoby` | `Osoba` | `id_osoby` | N : 1 |
 | `Adres` | `id_ulicy` | `Ulica` | `id_ulicy` | N : 1 |
 | `Ulica` | `id_miasta` | `Miasto` | `id_miasta` | N : 1 |
 | `Miasto` | `id_wojewodztwa` | `Wojewodztwo` | `id_wojewodztwa` | N : 1 |
@@ -410,6 +418,7 @@ erDiagram
 | `Samochod` | `id_koloru` | `Kolor` | `id_koloru` | N : 1 |
 | `Samochod` | `id_typu_paliwa` | `Typ_Paliwa` | `id_typu_paliwa` | N : 1 |
 | `Model` | `id_marki` | `Marka` | `id_marki` | N : 1 |
+| `Pracownik` | `id_osoby` | `Osoba` | `id_osoby` | N : 1 |
 | `Pracownik` | `id_stanowiska` | `Stanowisko` | `id_stanowiska` | N : 1 |
 | `Pracownik` | `id_oddzialu` | `Oddzial` | `id_oddzialu` | N : 1 |
 | `Oddzial` | `id_adresu` | `Adres` | `id_adresu` | N : 1 |
@@ -426,7 +435,7 @@ erDiagram
 
 1. **Sekwencje Oracle:** Dla każdego klucza głównego (np. `NUMERIC(8,0)`) należy utworzyć sekwencję Oracle (`CREATE SEQUENCE`) i odpowiadający jej trigger `BEFORE INSERT` lub użyć kolumny `GENERATED ALWAYS AS IDENTITY` (Oracle 12c+).
 
-2. **Ograniczenia `UNIQUE`:** Kolumny `pesel` (w tabelach `Klient` i `Pracownik`), `numer_rejestracyjny` i `numer_vin` (w tabeli `Samochod`) powinny mieć nałożone ograniczenia `UNIQUE`.
+2. **Ograniczenia `UNIQUE`:** Kolumna `pesel` (w tabeli `Osoba`), `numer_rejestracyjny` i `numer_vin` (w tabeli `Samochod`) powinny mieć nałożone ograniczenia `UNIQUE`.
 
 3. **Ograniczenia `CHECK`:** Zalecane walidacje:
    - `rabat_procent BETWEEN 0 AND 100`
