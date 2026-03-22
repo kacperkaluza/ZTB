@@ -80,15 +80,15 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_wypozyczenia` | **PK** | `INTEGER` | Unikalny identyfikator wypożyczenia |
-| 2 | `id_klienta` | **FK → Klient** | `INTEGER` | Klient wypożyczający |
-| 3 | `id_samochodu` | **FK → Samochod** | `INTEGER` | Wypożyczany pojazd |
-| 4 | `id_pracownika_wydania` | **FK → Pracownik** | `INTEGER` | Pracownik wydający pojazd |
-| 5 | `id_pracownika_odbioru` | **FK → Pracownik** | `INTEGER` | Pracownik odbierający pojazd (NULL do momentu zwrotu) |
-| 6 | `id_ubezpieczenia` | **FK → Ubezpieczenie** | `INTEGER` | Wykupiona polisa |
-| 7 | `id_statusu` | **FK → Status_Wypozyczenia** | `INTEGER` | Aktualny status transakcji |
-| 8 | `id_oddzialu_wydania` | **FK → Oddzial** | `INTEGER` | Oddział wydania pojazdu |
-| 9 | `id_oddzialu_zwrotu` | **FK → Oddzial** | `INTEGER` | Oddział zwrotu pojazdu |
+| 1 | `id_wypozyczenia` | **PK** | `NUMERIC(10,0)` | Unikalny identyfikator wypożyczenia |
+| 2 | `id_klienta` | **FK → Klient** | `NUMERIC(8,0)` | Klient wypożyczający |
+| 3 | `id_samochodu` | **FK → Samochod** | `NUMERIC(5,0)` | Wypożyczany pojazd |
+| 4 | `id_pracownika_wydania` | **FK → Pracownik** | `NUMERIC(4,0)` | Pracownik wydający pojazd |
+| 5 | `id_pracownika_odbioru` | **FK → Pracownik** | `NUMERIC(4,0)` | Pracownik odbierający pojazd (NULL do momentu zwrotu) |
+| 6 | `id_ubezpieczenia` | **FK → Ubezpieczenie** | `NUMERIC(8,0)` | Wykupiona polisa |
+| 7 | `id_statusu` | **FK → Status_Wypozyczenia** | `NUMERIC(2,0)` | Aktualny status transakcji |
+| 8 | `id_oddzialu_wydania` | **FK → Oddzial** | `NUMERIC` | Oddział wydania pojazdu |
+| 9 | `id_oddzialu_zwrotu` | **FK → Oddzial** | `NUMERIC` | Oddział zwrotu pojazdu |
 | 10 | `data_wydania` | — | `DATE` | Data i godzina wydania pojazdu |
 | 11 | `data_planowanego_zwrotu` | — | `DATE` | Planowana data zwrotu |
 | 12 | `data_faktycznego_zwrotu` | — | `DATE` | Faktyczna data zwrotu (NULL do momentu zwrotu) |
@@ -112,7 +112,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_statusu` | **PK** | `INTEGER` | Identyfikator statusu |
+| 1 | `id_statusu` | **PK** | `NUMERIC(2,0)` | Identyfikator statusu |
 | 2 | `nazwa_statusu` | — | `VARCHAR2(50)` | Nazwa statusu (np. „Rezerwacja", „Wydany", „Zwrocony", „Anulowany") |
 | 3 | `opis` | — | `VARCHAR2(200)` | Opis znaczenia statusu |
 
@@ -122,8 +122,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_ubezpieczenia` | **PK** | `INTEGER` | Identyfikator polisy |
-| 2 | `id_typu_ubezpieczenia` | **FK → Typ_Ubezpieczenia** | `INTEGER` | Typ ubezpieczenia |
+| 1 | `id_ubezpieczenia` | **PK** | `NUMERIC(8,0)` | Identyfikator polisy |
+| 2 | `id_typu_ubezpieczenia` | **FK → Typ_Ubezpieczenia** | `NUMERIC(2,0)` | Typ ubezpieczenia |
 | 3 | `numer_polisy` | — | `VARCHAR2(30)` | Numer polisy ubezpieczeniowej |
 | 4 | `data_od` | — | `DATE` | Data rozpoczęcia ochrony |
 | 5 | `data_do` | — | `DATE` | Data zakończenia ochrony |
@@ -136,7 +136,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_typu_ubezpieczenia` | **PK** | `INTEGER` | Identyfikator typu |
+| 1 | `id_typu_ubezpieczenia` | **PK** | `NUMERIC(2,0)` | Identyfikator typu |
 | 2 | `nazwa_typu` | — | `VARCHAR2(80)` | Nazwa (np. „OC podstawowe", „AC pełne", „NNW", „Assistance 24h") |
 | 3 | `opis` | — | `VARCHAR2(300)` | Szczegółowy opis zakresu ochrony |
 
@@ -149,9 +149,9 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_platnosci` | **PK** | `INTEGER` | Identyfikator płatności |
-| 2 | `id_wypozyczenia` | **FK → Wypozyczenie** | `INTEGER` | Powiązane wypożyczenie |
-| 3 | `id_metody_platnosci` | **FK → Metoda_Platnosci** | `INTEGER` | Metoda płatności |
+| 1 | `id_platnosci` | **PK** | `NUMERIC(10,0)` | Identyfikator płatności |
+| 2 | `id_wypozyczenia` | **FK → Wypozyczenie** | `NUMERIC(10,0)` | Powiązane wypożyczenie |
+| 3 | `id_metody_platnosci` | **FK → Metoda_Platnosci** | `NUMERIC(2,0)` | Metoda płatności |
 | 4 | `kwota` | — | `NUMERIC(12,2)` | Kwota płatności [PLN] |
 | 5 | `data_platnosci` | — | `DATE` | Data i godzina zaksięgowania |
 | 6 | `numer_transakcji` | — | `VARCHAR2(50)` | Numer referencyjny transakcji bankowej |
@@ -163,7 +163,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_metody_platnosci` | **PK** | `INTEGER` | Identyfikator metody |
+| 1 | `id_metody_platnosci` | **PK** | `NUMERIC(2,0)` | Identyfikator metody |
 | 2 | `nazwa_metody` | — | `VARCHAR2(50)` | Nazwa (np. „Gotówka", „Karta debetowa", „Przelew", „BLIK") |
 
 ---
@@ -178,8 +178,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_klienta` | **PK** | `INTEGER` | Identyfikator klienta |
-| 2 | `id_adresu` | **FK → Adres** | `INTEGER` | Adres zamieszkania |
+| 1 | `id_klienta` | **PK** | `NUMERIC(8,0)` | Identyfikator klienta |
+| 2 | `id_adresu` | **FK → Adres** | `NUMERIC(8,0)` | Adres zamieszkania |
 | 3 | `imie` | — | `VARCHAR2(50)` | Imię klienta |
 | 4 | `nazwisko` | — | `VARCHAR2(80)` | Nazwisko klienta |
 | 5 | `pesel` | — | `CHAR(11)` | Numer PESEL (unikalny) |
@@ -197,8 +197,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_adresu` | **PK** | `INTEGER` | Identyfikator adresu |
-| 2 | `id_ulicy` | **FK → Ulica** | `INTEGER` | Ulica |
+| 1 | `id_adresu` | **PK** | `NUMERIC(8,0)` | Identyfikator adresu |
+| 2 | `id_ulicy` | **FK → Ulica** | `NUMERIC(6,0)` | Ulica |
 | 3 | `numer_budynku` | — | `VARCHAR2(10)` | Numer budynku (np. „12A") |
 | 4 | `numer_lokalu` | — | `VARCHAR2(10)` | Numer lokalu (NULL jeśli dom) |
 | 5 | `kod_pocztowy` | — | `CHAR(6)` | Kod pocztowy (format: „00-000") |
@@ -209,8 +209,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_ulicy` | **PK** | `INTEGER` | Identyfikator ulicy |
-| 2 | `id_miasta` | **FK → Miasto** | `INTEGER` | Miasto, do którego należy ulica |
+| 1 | `id_ulicy` | **PK** | `NUMERIC(6,0)` | Identyfikator ulicy |
+| 2 | `id_miasta` | **FK → Miasto** | `NUMERIC(5,0)` | Miasto, do którego należy ulica |
 | 3 | `nazwa_ulicy` | — | `VARCHAR2(100)` | Nazwa ulicy (np. „ul. Krakowska") |
 
 ---
@@ -219,8 +219,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_miasta` | **PK** | `INTEGER` | Identyfikator miasta |
-| 2 | `id_wojewodztwa` | **FK → Wojewodztwo** | `INTEGER` | Województwo |
+| 1 | `id_miasta` | **PK** | `NUMERIC(5,0)` | Identyfikator miasta |
+| 2 | `id_wojewodztwa` | **FK → Wojewodztwo** | `NUMERIC(2,0)` | Województwo |
 | 3 | `nazwa_miasta` | — | `VARCHAR2(80)` | Nazwa miasta |
 
 ---
@@ -229,8 +229,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_wojewodztwa` | **PK** | `INTEGER` | Identyfikator województwa |
-| 2 | `id_panstwa` | **FK → Panstwo** | `INTEGER` | Państwo |
+| 1 | `id_wojewodztwa` | **PK** | `NUMERIC(2,0)` | Identyfikator województwa |
+| 2 | `id_panstwa` | **FK → Panstwo** | `NUMERIC(3,0)` | Państwo |
 | 3 | `nazwa_wojewodztwa` | — | `VARCHAR2(80)` | Nazwa województwa / regionu |
 
 ---
@@ -239,7 +239,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_panstwa` | **PK** | `INTEGER` | Identyfikator państwa |
+| 1 | `id_panstwa` | **PK** | `NUMERIC(3,0)` | Identyfikator państwa |
 | 2 | `nazwa_panstwa` | — | `VARCHAR2(80)` | Pełna nazwa państwa |
 | 3 | `kod_iso` | — | `CHAR(3)` | Kod ISO 3166-1 alpha-3 (np. „POL", „DEU") |
 
@@ -255,11 +255,11 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_samochodu` | **PK** | `INTEGER` | Identyfikator pojazdu |
-| 2 | `id_modelu` | **FK → Model** | `INTEGER` | Model pojazdu |
-| 3 | `id_kategorii` | **FK → Kategoria** | `INTEGER` | Kategoria cenowa / segmentowa |
-| 4 | `id_koloru` | **FK → Kolor** | `INTEGER` | Kolor nadwozia |
-| 5 | `id_typu_paliwa` | **FK → Typ_Paliwa** | `INTEGER` | Rodzaj paliwa / napędu |
+| 1 | `id_samochodu` | **PK** | `NUMERIC(5,0)` | Identyfikator pojazdu |
+| 2 | `id_modelu` | **FK → Model** | `NUMERIC(5,0)` | Model pojazdu |
+| 3 | `id_kategorii` | **FK → Kategoria** | `NUMERIC(2,0)` | Kategoria cenowa / segmentowa |
+| 4 | `id_koloru` | **FK → Kolor** | `NUMERIC(3,0)` | Kolor nadwozia |
+| 5 | `id_typu_paliwa` | **FK → Typ_Paliwa** | `NUMERIC(2,0)` | Rodzaj paliwa / napędu |
 | 6 | `numer_rejestracyjny` | — | `VARCHAR2(15)` | Numer rejestracyjny (unikalny) |
 | 7 | `numer_vin` | — | `CHAR(17)` | Numer VIN (unikalny, 17 znaków) |
 | 8 | `rok_produkcji` | — | `NUMERIC(4,0)` | Rok produkcji |
@@ -277,8 +277,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_modelu` | **PK** | `INTEGER` | Identyfikator modelu |
-| 2 | `id_marki` | **FK → Marka** | `INTEGER` | Marka produkująca model |
+| 1 | `id_modelu` | **PK** | `NUMERIC(5,0)` | Identyfikator modelu |
+| 2 | `id_marki` | **FK → Marka** | `NUMERIC(3,0)` | Marka produkująca model |
 | 3 | `nazwa_modelu` | — | `VARCHAR2(80)` | Nazwa modelu (np. „Corolla", „Golf", „Model 3") |
 
 ---
@@ -287,7 +287,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_marki` | **PK** | `INTEGER` | Identyfikator marki |
+| 1 | `id_marki` | **PK** | `NUMERIC(3,0)` | Identyfikator marki |
 | 2 | `nazwa_marki` | — | `VARCHAR2(50)` | Nazwa marki (np. „Toyota", „Volkswagen", „Tesla") |
 | 3 | `kraj_pochodzenia` | — | `VARCHAR2(50)` | Kraj pochodzenia marki |
 
@@ -297,7 +297,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_kategorii` | **PK** | `INTEGER` | Identyfikator kategorii |
+| 1 | `id_kategorii` | **PK** | `NUMERIC(2,0)` | Identyfikator kategorii |
 | 2 | `nazwa_kategorii` | — | `VARCHAR2(50)` | Nazwa (np. „Ekonomiczny", „Komfort", „Premium", „SUV", „Van") |
 | 3 | `opis` | — | `VARCHAR2(200)` | Opis segmentu i typowego przeznaczenia |
 | 4 | `stawka_bazowa_netto` | — | `NUMERIC(10,2)` | Bazowa stawka dzienna netto dla kategorii [PLN] |
@@ -308,7 +308,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_koloru` | **PK** | `INTEGER` | Identyfikator koloru |
+| 1 | `id_koloru` | **PK** | `NUMERIC(3,0)` | Identyfikator koloru |
 | 2 | `nazwa_koloru` | — | `VARCHAR2(30)` | Nazwa koloru (np. „Czarny metalic", „Biały perłowy") |
 
 ---
@@ -317,7 +317,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_typu_paliwa` | **PK** | `INTEGER` | Identyfikator typu paliwa |
+| 1 | `id_typu_paliwa` | **PK** | `NUMERIC(2,0)` | Identyfikator typu paliwa |
 | 2 | `nazwa_paliwa` | — | `VARCHAR2(30)` | Nazwa (np. „Benzyna", „Diesel", „LPG", „Elektryczny", „Hybryda") |
 
 ---
@@ -328,9 +328,9 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_pracownika` | **PK** | `INTEGER` | Identyfikator pracownika |
-| 2 | `id_stanowiska` | **FK → Stanowisko** | `INTEGER` | Stanowisko służbowe |
-| 3 | `id_oddzialu` | **FK → Oddzial** | `INTEGER` | Oddział macierzysty |
+| 1 | `id_pracownika` | **PK** | `NUMERIC(4,0)` | Identyfikator pracownika |
+| 2 | `id_stanowiska` | **FK → Stanowisko** | `NUMERIC(2,0)` | Stanowisko służbowe |
+| 3 | `id_oddzialu` | **FK → Oddzial** | `NUMERIC(3,0)` | Oddział macierzysty |
 | 4 | `imie` | — | `VARCHAR2(50)` | Imię pracownika |
 | 5 | `nazwisko` | — | `VARCHAR2(80)` | Nazwisko pracownika |
 | 6 | `pesel` | — | `CHAR(11)` | PESEL pracownika (unikalny) |
@@ -345,7 +345,7 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_stanowiska` | **PK** | `INTEGER` | Identyfikator stanowiska |
+| 1 | `id_stanowiska` | **PK** | `NUMERIC(2,0)` | Identyfikator stanowiska |
 | 2 | `nazwa_stanowiska` | — | `VARCHAR2(60)` | Nazwa (np. „Kierownik oddziału", „Konsultant", „Mechanik") |
 | 3 | `opis` | — | `VARCHAR2(200)` | Zakres obowiązków |
 | 4 | `stawka_godzinowa` | — | `NUMERIC(8,2)` | Bazowa stawka godzinowa [PLN] |
@@ -356,8 +356,8 @@ erDiagram
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
-| 1 | `id_oddzialu` | **PK** | `INTEGER` | Identyfikator oddziału |
-| 2 | `id_adresu` | **FK → Adres** | `INTEGER` | Adres fizyczny oddziału |
+| 1 | `id_oddzialu` | **PK** | `NUMERIC(3,0)` | Identyfikator oddziału |
+| 2 | `id_adresu` | **FK → Adres** | `NUMERIC(8,0)` | Adres fizyczny oddziału |
 | 3 | `nazwa_oddzialu` | — | `VARCHAR2(80)` | Nazwa oddziału (np. „Warszawa Okęcie", „Kraków Główny") |
 | 4 | `telefon` | — | `VARCHAR2(20)` | Telefon kontaktowy |
 | 5 | `email` | — | `VARCHAR2(100)` | E-mail oddziału |
@@ -424,7 +424,7 @@ erDiagram
 > [!WARNING]
 > **Kolumny z flagami logicznymi** (`czy_dostepny`, `czy_aktywny`, `czy_zwrot`) są typu `NUMERIC(1,0)` zamiast `BOOLEAN`, ponieważ Oracle Database nie posiada natywnego typu `BOOLEAN` w wersjach starszych niż 23c. W Oracle 23c+ można zastąpić je typem `BOOLEAN`.
 
-1. **Sekwencje Oracle:** Dla każdego klucza głównego (`INTEGER`) należy utworzyć sekwencję Oracle (`CREATE SEQUENCE`) i odpowiadający jej trigger `BEFORE INSERT` lub użyć kolumny `GENERATED ALWAYS AS IDENTITY` (Oracle 12c+).
+1. **Sekwencje Oracle:** Dla każdego klucza głównego (np. `NUMERIC(8,0)`) należy utworzyć sekwencję Oracle (`CREATE SEQUENCE`) i odpowiadający jej trigger `BEFORE INSERT` lub użyć kolumny `GENERATED ALWAYS AS IDENTITY` (Oracle 12c+).
 
 2. **Ograniczenia `UNIQUE`:** Kolumny `pesel` (w tabelach `Klient` i `Pracownik`), `numer_rejestracyjny` i `numer_vin` (w tabeli `Samochod`) powinny mieć nałożone ograniczenia `UNIQUE`.
 
