@@ -10,3 +10,5 @@ Tool versions
 - Java runtime: 25.0.1 (2025-10-21 LTS)
 - Git: 2.50.1 (Apple Git-155)
 
+## Database Schema
+![Database Schema](Schema.png)
