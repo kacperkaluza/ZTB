@@ -19,19 +19,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Panstwo_ID_Panstwa" id="7C2D662B-5B05-26F3-9186-AC3BA768D7D8">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>12716EAB-BB5C-2418-63C1-0B07A1D65BB8</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="88B96524-6BB7-72AF-B149-9C15C13674D2" referredColumn="92EB7C1F-8338-6FB6-C3D9-EF664B3D5194"/>
-</associations>
-</Column>
 <Column name="Nazwa_Marki" id="F3C81B76-80DD-7EFD-8C8D-706D5B05D358">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
@@ -57,17 +44,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A77F77C5-7439-ACB5-DD0F-96AA3F8DA64E"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="6A9C91AA-03F4-0B1F-3A62-709D34E81A44" name="p_72_Marka_p_72_Panstwo_FK">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>7BC37D5C-1AB0-0B49-21F2-4F46FF24487D</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="7C2D662B-5B05-26F3-9186-AC3BA768D7D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
