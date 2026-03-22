@@ -1,5 +1,9 @@
 # Project ZTB
 
+```bash
+git clone https://github.com/kacperkaluza/ZTB.git
+```
+
 Canonical model
 ---------------
 - [01-baza/sqlDeveloper/design.dmd](01-baza/sqlDeveloper/design.dmd)
