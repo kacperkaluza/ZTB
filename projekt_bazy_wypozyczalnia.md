@@ -3,7 +3,7 @@
 > [!NOTE]
 > Środowisko docelowe: **Oracle Database (OLTP)**. Schemat znormalizowany do **3NF**.
 > Nazewnictwo: język polski bez polskich znaków diakrytycznych.
-> Łączna liczba tabel: **22**.
+> Łączna liczba tabel: **20**.
 
 ---
 
@@ -11,7 +11,6 @@
 
 ```mermaid
 erDiagram
-    Wypozyczenie ||--o{ Platnosc : "1:N"
     Wypozyczenie }o--|| Klient : "N:1"
     Wypozyczenie }o--|| Pracownik : "N:1"
     Wypozyczenie }o--|| Samochod : "N:1"
@@ -40,7 +39,6 @@ erDiagram
     Pracownik }o--|| Oddzial : "N:1"
     Oddzial }o--|| Adres : "N:1"
 
-    Platnosc }o--|| Metoda_Platnosci : "N:1"
 ```
 
 ---
@@ -49,28 +47,26 @@ erDiagram
 
 | # | Gałąź | Tabela | Rola |
 |---|-------|--------|------|
-| 1 | Transakcji | `Wypozyczenie` | **Centralna tabela faktów** |
-| 2 | Transakcji | `Status_Wypozyczenia` | Słownik statusów wypożyczenia |
-| 3 | Transakcji | `Ubezpieczenie` | Polisa ubezpieczeniowa |
-| 4 | Transakcji | `Typ_Ubezpieczenia` | Słownik typów ubezpieczeń |
-| 5 | Transakcji | `Platnosc` | Rejestr płatności |
-| 6 | Transakcji | `Metoda_Platnosci` | Słownik metod płatności |
-| 7 | Klienta i adresu | `Osoba` | Dane ogólne osoby (klienta/pracownika) |
-| 8 | Klienta i adresu | `Klient` | Dane specyficzne klienta |
-| 9 | Klienta i adresu | `Adres` | Pełny adres (łącznik) |
-| 10 | Klienta i adresu | `Ulica` | Słownik ulic |
-| 11 | Klienta i adresu | `Miasto` | Słownik miast |
-| 12 | Klienta i adresu | `Wojewodztwo` | Słownik województw |
-| 13 | Klienta i adresu | `Panstwo` | Słownik państw |
-| 14 | Pojazdu | `Samochod` | Dane pojazdu |
-| 15 | Pojazdu | `Model` | Słownik modeli |
-| 16 | Pojazdu | `Marka` | Słownik marek |
-| 17 | Pojazdu | `Kategoria` | Słownik kategorii pojazdów |
-| 18 | Pojazdu | `Kolor` | Słownik kolorów |
-| 19 | Pojazdu | `Typ_Paliwa` | Słownik typów paliwa |
-| 20 | Pracownika i oddziału | `Pracownik` | Dane pracownika |
-| 21 | Pracownika i oddziału | `Stanowisko` | Słownik stanowisk |
-| 22 | Pracownika i oddziału | `Oddzial` | Dane oddziału wypożyczalni |
+| -1 | Transakcji | `Wypozyczenie` | **Centralna tabela faktów** |
+| 0 | Transakcji | `Status_Wypozyczenia` | Słownik statusów wypożyczenia |
+| 1 | Transakcji | `Ubezpieczenie` | Polisa ubezpieczeniowa |
+| 2 | Transakcji | `Typ_Ubezpieczenia` | Słownik typów ubezpieczeń |
+| 5 | Klienta i adresu | `Osoba` | Dane ogólne osoby (klienta/pracownika) |
+| 6 | Klienta i adresu | `Klient` | Dane specyficzne klienta |
+| 7 | Klienta i adresu | `Adres` | Pełny adres (łącznik) |
+| 8 | Klienta i adresu | `Ulica` | Słownik ulic |
+| 9 | Klienta i adresu | `Miasto` | Słownik miast |
+| 10 | Klienta i adresu | `Wojewodztwo` | Słownik województw |
+| 11 | Klienta i adresu | `Panstwo` | Słownik państw |
+| 12 | Pojazdu | `Samochod` | Dane pojazdu |
+| 13 | Pojazdu | `Model` | Słownik modeli |
+| 14 | Pojazdu | `Marka` | Słownik marek |
+| 15 | Pojazdu | `Kategoria` | Słownik kategorii pojazdów |
+| 16 | Pojazdu | `Kolor` | Słownik kolorów |
+| 17 | Pojazdu | `Typ_Paliwa` | Słownik typów paliwa |
+| 18 | Pracownika i oddziału | `Pracownik` | Dane pracownika |
+| 19 | Pracownika i oddziału | `Stanowisko` | Słownik stanowisk |
+| 20 | Pracownika i oddziału | `Oddzial` | Dane oddziału wypożyczalni |
 
 ---
 
@@ -145,39 +141,13 @@ erDiagram
 
 ---
 
-### 5. `Platnosc` — Rejestr Płatności
-
-> [!TIP]
-> Relacja 1:N z `Wypozyczenie` umożliwia rejestrację płatności częściowych, rat oraz zwrotów kaucji.
-
-| # | Kolumna | Rola | Typ danych | Opis |
-|---|---------|------|------------|------|
-| 1 | `id_platnosci` | **PK** | `NUMERIC(10,0)` | Identyfikator płatności |
-| 2 | `id_wypozyczenia` | **FK → Wypozyczenie** | `NUMERIC(10,0)` | Powiązane wypożyczenie |
-| 3 | `id_metody_platnosci` | **FK → Metoda_Platnosci** | `NUMERIC(2,0)` | Metoda płatności |
-| 4 | `kwota` | — | `NUMERIC(12,2)` | Kwota płatności [PLN] |
-| 5 | `data_platnosci` | — | `DATE` | Data i godzina zaksięgowania |
-| 6 | `numer_transakcji` | — | `VARCHAR2(50)` | Numer referencyjny transakcji bankowej |
-| 7 | `czy_zwrot` | — | `NUMERIC(1,0)` | Flaga: 1 = zwrot, 0 = wpłata |
-
----
-
-### 6. `Metoda_Platnosci` — Słownik Metod Płatności
-
-| # | Kolumna | Rola | Typ danych | Opis |
-|---|---------|------|------------|------|
-| 1 | `id_metody_platnosci` | **PK** | `NUMERIC(2,0)` | Identyfikator metody |
-| 2 | `nazwa_metody` | — | `VARCHAR2(50)` | Nazwa (np. „Gotówka", „Karta debetowa", „Przelew", „BLIK") |
-
----
-
 ## II. Gałąź Klienta i Adresu
 
 > [!NOTE]
 > Hierarchia adresowa jest w pełni znormalizowana (3NF):
 > **Panstwo → Wojewodztwo → Miasto → Ulica → Adres → Klient / Oddzial**
 
-### 7. `Osoba` — Dane Ogólne Osoby
+### 5. `Osoba` — Dane Ogólne Osoby
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -191,7 +161,7 @@ erDiagram
 
 ---
 
-### 8. `Klient` — Dane Klienta
+### 6. `Klient` — Dane Klienta
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -205,7 +175,7 @@ erDiagram
 
 ---
 
-### 9. `Adres` — Pełny Adres (Tabela Łącznikowa)
+### 7. `Adres` — Pełny Adres (Tabela Łącznikowa)
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -217,7 +187,7 @@ erDiagram
 
 ---
 
-### 10. `Ulica` — Słownik Ulic
+### 8. `Ulica` — Słownik Ulic
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -227,7 +197,7 @@ erDiagram
 
 ---
 
-### 11. `Miasto` — Słownik Miast
+### 9. `Miasto` — Słownik Miast
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -237,7 +207,7 @@ erDiagram
 
 ---
 
-### 12. `Wojewodztwo` — Słownik Województw
+### 10. `Wojewodztwo` — Słownik Województw
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -247,7 +217,7 @@ erDiagram
 
 ---
 
-### 13. `Panstwo` — Słownik Państw
+### 11. `Panstwo` — Słownik Państw
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -263,7 +233,7 @@ erDiagram
 > Dane pojazdu są znormalizowane do 3NF przez rozbicie na słowniki:
 > **Marka → Model → Samochod**, plus osobne słowniki: **Kategoria**, **Kolor**, **Typ_Paliwa**.
 
-### 14. `Samochod` — Dane Pojazdu
+### 12. `Samochod` — Dane Pojazdu
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -285,7 +255,7 @@ erDiagram
 
 ---
 
-### 15. `Model` — Słownik Modeli Pojazdów
+### 13. `Model` — Słownik Modeli Pojazdów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -295,7 +265,7 @@ erDiagram
 
 ---
 
-### 16. `Marka` — Słownik Marek
+### 14. `Marka` — Słownik Marek
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -305,7 +275,7 @@ erDiagram
 
 ---
 
-### 17. `Kategoria` — Słownik Kategorii Pojazdów
+### 15. `Kategoria` — Słownik Kategorii Pojazdów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -316,7 +286,7 @@ erDiagram
 
 ---
 
-### 18. `Kolor` — Słownik Kolorów
+### 16. `Kolor` — Słownik Kolorów
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -325,7 +295,7 @@ erDiagram
 
 ---
 
-### 19. `Typ_Paliwa` — Słownik Typów Paliwa
+### 17. `Typ_Paliwa` — Słownik Typów Paliwa
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -336,7 +306,7 @@ erDiagram
 
 ## IV. Gałąź Pracownika i Oddziału
 
-### 20. `Pracownik` — Dane Pracownika
+### 18. `Pracownik` — Dane Pracownika
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -348,7 +318,7 @@ erDiagram
 | 6 | `czy_aktywny` | — | `NUMERIC(1,0)` | Flaga: 1 = aktywny, 0 = nieaktywny |
 ---
 
-### 21. `Stanowisko` — Słownik Stanowisk
+### 19. `Stanowisko` — Słownik Stanowisk
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -359,7 +329,7 @@ erDiagram
 
 ---
 
-### 22. `Oddzial` — Dane Oddziału Wypożyczalni
+### 20. `Oddzial` — Dane Oddziału Wypożyczalni
 
 | # | Kolumna | Rola | Typ danych | Opis |
 |---|---------|------|------------|------|
@@ -404,8 +374,6 @@ erDiagram
 | `Wypozyczenie` | `id_statusu` | `Status_Wypozyczenia` | `id_statusu` | N : 1 |
 | `Wypozyczenie` | `id_oddzialu_wydania` | `Oddzial` | `id_oddzialu` | N : 1 |
 | `Wypozyczenie` | `id_oddzialu_zwrotu` | `Oddzial` | `id_oddzialu` | N : 1 |
-| `Platnosc` | `id_wypozyczenia` | `Wypozyczenie` | `id_wypozyczenia` | N : 1 |
-| `Platnosc` | `id_metody_platnosci` | `Metoda_Platnosci` | `id_metody_platnosci` | N : 1 |
 | `Ubezpieczenie` | `id_typu_ubezpieczenia` | `Typ_Ubezpieczenia` | `id_typu_ubezpieczenia` | N : 1 |
 | `Osoba` | `id_adresu` | `Adres` | `id_adresu` | N : 1 |
 | `Klient` | `id_osoby` | `Osoba` | `id_osoby` | N : 1 |
