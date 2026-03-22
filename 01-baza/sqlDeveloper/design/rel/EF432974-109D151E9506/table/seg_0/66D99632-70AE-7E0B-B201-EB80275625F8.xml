@@ -34,7 +34,7 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Miasto_ID_Miasta" id="63369085-8B66-829A-E6E8-4BA426DDD18B">
+<Column name="ID_Miasta" id="63369085-8B66-829A-E6E8-4BA426DDD18B">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>2A557CE9-B5B9-8F23-A25D-C148DD33F607</generatorID>
@@ -44,7 +44,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -65,7 +65,7 @@
 <colUsage columnID="43755E81-696E-B72D-1A4B-BEB4E17BE202"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B219D1A7-5FB5-8151-85C1-BC818386E12F" name="p_72_Ulica_p_72_Miasto_FK">
+<ind_PK_UK id="B219D1A7-5FB5-8151-85C1-BC818386E12F" name="p_72_Ulica_Miasto_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>0337CABB-5BA2-4524-EB97-1EDB0B20BFA4</generatorID>

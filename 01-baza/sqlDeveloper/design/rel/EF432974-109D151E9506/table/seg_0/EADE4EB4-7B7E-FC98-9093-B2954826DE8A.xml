@@ -17,11 +17,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Typ_Paliwa_ID_Typu_Paliwa" id="E196B213-5396-6D47-016A-E428C7879936">
+<Column name="ID_Typu_Paliwa" id="E196B213-5396-6D47-016A-E428C7879936">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>52BDEF3C-A4C2-1377-154F-7CCDDA535EBB</generatorID>
@@ -31,14 +30,14 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="557E9D14-790D-9714-1CF2-4D575F491D68" referredColumn="10E55A87-28EB-A705-5208-A06F053A9FC5"/>
 </associations>
 </Column>
-<Column name="p_72_Kolor_ID_Kolor" id="D39B0E7E-29FA-3E24-2668-091A6BA0C375">
+<Column name="ID_Kolor" id="D39B0E7E-29FA-3E24-2668-091A6BA0C375">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>59465C27-D214-6E4F-C37F-E63CD38BD7C5</generatorID>
@@ -48,14 +47,14 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="985CAFEF-3BBC-503E-2836-8FA495048DA8" referredColumn="71A00890-710B-A787-2CB0-FB1924CE5621"/>
 </associations>
 </Column>
-<Column name="p_72_Kategoria_ID_Kategoria" id="DED32894-4C9D-C11C-A3BE-C639A1A00B65">
+<Column name="ID_Kategoria" id="DED32894-4C9D-C11C-A3BE-C639A1A00B65">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>C6077150-56EB-985F-6342-D0AA1DEB13B1</generatorID>
@@ -65,14 +64,14 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="F0914CD1-5F7D-C31A-BB29-E0F5E3203B30" referredColumn="A7F8C74C-88C8-C668-1076-2ACECE9E538C"/>
 </associations>
 </Column>
-<Column name="p_72_Model_ID_Model" id="FC335AF0-9BC8-DB9E-F780-7F5B63C648CE">
+<Column name="ID_Model" id="FC335AF0-9BC8-DB9E-F780-7F5B63C648CE">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>3E2F380E-37C7-3F29-B48C-9CA0537CDD49</generatorID>
@@ -82,7 +81,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -243,7 +242,7 @@
 <colUsage columnID="FF931D8C-2651-2E63-36BF-E59A83F91CB9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="78EDEA91-26FA-E016-72F8-BCDDCF965B22" name="p_72_Samochod_Numer_Rejestracyjny_UN">
+<ind_PK_UK id="78EDEA91-26FA-E016-72F8-BCDDCF965B22" name="p_72_Sam_Nr_Rej_UN">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>5BC862E7-7F19-532E-0B98-74B75A06D177</generatorID>
@@ -254,7 +253,7 @@
 <colUsage columnID="E0415A72-65D7-DB6F-EEC2-7C5331D1010C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F1A34CC8-51FF-B7C6-203B-F662B378D394" name="p_72_Samochod_p_72_Kategoria_FK">
+<ind_PK_UK id="F1A34CC8-51FF-B7C6-203B-F662B378D394" name="p_72_Samochod_Kategoria_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>49DEECB3-D10E-97AA-FF34-F7CC4C5724D7</generatorID>
@@ -265,7 +264,7 @@
 <colUsage columnID="DED32894-4C9D-C11C-A3BE-C639A1A00B65"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="450541CB-C282-EE61-FAA3-B370958AD7D4" name="p_72_Samochod_p_72_Kolor_FK">
+<ind_PK_UK id="450541CB-C282-EE61-FAA3-B370958AD7D4" name="p_72_Samochod_Kolor_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>EE9BBA5C-FBBC-303D-63BA-C19AFD798EDA</generatorID>
@@ -276,7 +275,7 @@
 <colUsage columnID="D39B0E7E-29FA-3E24-2668-091A6BA0C375"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1B549150-A2AD-30FA-C6F4-D8928C79BF08" name="p_72_Samochod_p_72_Model_FK">
+<ind_PK_UK id="1B549150-A2AD-30FA-C6F4-D8928C79BF08" name="p_72_Samochod_Model_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>65D8EC67-30C1-4468-D490-E15483BFFD51</generatorID>
@@ -287,7 +286,7 @@
 <colUsage columnID="FC335AF0-9BC8-DB9E-F780-7F5B63C648CE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="46F71A4A-2784-B3E8-1041-9CFFB2183087" name="p_72_Samochod_p_72_Typ_Paliwa_FK">
+<ind_PK_UK id="46F71A4A-2784-B3E8-1041-9CFFB2183087" name="p_72_Samochod_Typ_Paliwa_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>BE95BCEE-A637-F9D1-F0E1-B42B4E92E7EA</generatorID>

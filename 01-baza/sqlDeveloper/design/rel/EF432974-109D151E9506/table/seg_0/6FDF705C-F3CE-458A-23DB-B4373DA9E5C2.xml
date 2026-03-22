@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,5,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Wojewodztwo_ID_Wojewodztwo" id="35B153C6-7F6C-C095-B3FD-AF1ECDE8C977">
+<Column name="ID_Wojewodztwo" id="35B153C6-7F6C-C095-B3FD-AF1ECDE8C977">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>26D275C2-594E-C4EB-B430-AFBD196AB5C2</generatorID>
@@ -65,7 +65,7 @@
 <colUsage columnID="67847659-AABF-001E-FD8A-B90BE4CF3EFB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="77D2F5C4-63FE-6A68-DE77-DDDDEDD1B26C" name="p_72_Miasto_p_72_Wojewodztwo_FK">
+<ind_PK_UK id="77D2F5C4-63FE-6A68-DE77-DDDDEDD1B26C" name="p_72_Miasto_Wojewodztwo_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>CB05993E-7D2B-D042-6CA0-CC48DBDA9D18</generatorID>

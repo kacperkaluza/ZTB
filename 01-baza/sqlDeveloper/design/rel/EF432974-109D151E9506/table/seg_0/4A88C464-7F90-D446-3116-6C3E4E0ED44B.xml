@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,8,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Typ_Ubezpieczenia_ID_Typu_Ubezpieczenia" id="0A85B2B4-7C8F-EE64-490A-62CDAD859D1F">
+<Column name="ID_Typu_Ubezpieczenia" id="0A85B2B4-7C8F-EE64-490A-62CDAD859D1F">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>30ABB196-E2CE-E344-0073-446C31ADFD1C</generatorID>
@@ -117,7 +117,7 @@
 <colUsage columnID="F4544AEF-EF7F-260D-D662-AA640476699F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="921ADAAD-653A-7C75-BCE7-545002EDA8FA" name="p_72_Ubezpieczenie_p_72_Typ_Ubezpieczenia_FK">
+<ind_PK_UK id="921ADAAD-653A-7C75-BCE7-545002EDA8FA" name="p_72_Ubezp_Typ_Ubezp_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>C22F72C1-49DA-19A0-DF48-6BCDC642CE4F</generatorID>

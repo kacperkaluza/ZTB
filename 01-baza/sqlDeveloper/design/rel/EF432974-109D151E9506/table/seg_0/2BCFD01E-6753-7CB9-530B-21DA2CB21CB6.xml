@@ -86,7 +86,7 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Adres_ID_Adres" id="0C6D74E1-2730-E7CB-D574-6A361D7BE774">
+<Column name="ID_Adres" id="0C6D74E1-2730-E7CB-D574-6A361D7BE774">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>14E81B7B-71BF-230D-FE5D-3F110B90102E</generatorID>
@@ -96,7 +96,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -117,7 +117,7 @@
 <colUsage columnID="A541D19B-286B-E3C4-C22B-D40E0CE72BD2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9EDA3224-2054-3671-2413-4C470586D5EE" name="p_72_Oddzial_p_72_Adres_FK">
+<ind_PK_UK id="9EDA3224-2054-3671-2413-4C470586D5EE" name="p_72_Oddzial_Adres_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>08F0C46D-BC93-ECEC-55E5-C57E05851EEA</generatorID>

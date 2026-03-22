@@ -17,11 +17,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Ulica_ID_Ulica" id="06D3FA3E-FF4E-3CA3-9BE4-FBD3DBE31797">
+<Column name="ID_Ulica" id="06D3FA3E-FF4E-3CA3-9BE4-FBD3DBE31797">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>81423D29-A05B-78C2-BFC7-44B4A594CA02</generatorID>
@@ -31,7 +30,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -91,7 +90,7 @@
 <colUsage columnID="1A5ED944-33E0-AC91-A064-829578725E5E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="93526F7E-A252-195A-A9CD-A9891FE4AA43" name="p_72_Adres_p_72_Ulica_FK">
+<ind_PK_UK id="93526F7E-A252-195A-A9CD-A9891FE4AA43" name="p_72_Adres_Ulica_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>1CBEEE96-2B05-91A7-E340-2F0FE1052EEC</generatorID>

@@ -17,11 +17,10 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Adres_ID_Adres" id="3D5601F0-A6BB-CD16-491F-F6AAC392EA50">
+<Column name="ID_Adres" id="3D5601F0-A6BB-CD16-491F-F6AAC392EA50">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>5C0FB24F-F737-F9D3-E62D-C1520099503C</generatorID>
@@ -30,8 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -128,7 +126,7 @@
 <colUsage columnID="BC46C302-7814-E861-A452-ED30ED3B0262"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2AC83EA0-6F59-1CA8-0671-8C55CEC64ADC" name="p_72_Osoba_p_72_Adres_FK">
+<ind_PK_UK id="2AC83EA0-6F59-1CA8-0671-8C55CEC64ADC" name="p_72_Osoba_Adres_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>03670BBC-8F77-E387-D8B5-85651F265242</generatorID>

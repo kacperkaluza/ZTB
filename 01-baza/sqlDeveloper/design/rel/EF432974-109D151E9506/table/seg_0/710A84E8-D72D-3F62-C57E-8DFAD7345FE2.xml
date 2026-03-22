@@ -34,7 +34,7 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Marka_ID_Marka" id="9AF6FABB-EEBF-C84E-2C0E-E960975932F3">
+<Column name="ID_Marka" id="9AF6FABB-EEBF-C84E-2C0E-E960975932F3">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>2CD7F36F-2A5C-4B8C-2822-8F862EC55ABD</generatorID>
@@ -44,7 +44,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -65,7 +65,7 @@
 <colUsage columnID="7E38200F-24F3-AA31-CB40-40FCF77119F2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1490C104-CB44-13BD-DABA-20870C2DCB26" name="p_72_Model_p_72_Marka_FK">
+<ind_PK_UK id="1490C104-CB44-13BD-DABA-20870C2DCB26" name="p_72_Model_Marka_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>E95158AB-6FBB-0F72-5E18-52ED4962C639</generatorID>

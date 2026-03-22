@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,8,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Osoba_ID_Osoba" id="1B75826F-57E3-2C0A-D2AF-836B03045C5D">
+<Column name="ID_Osoba" id="1B75826F-57E3-2C0A-D2AF-836B03045C5D">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>D6AAB60E-DBE4-292D-7617-379D42BB1800</generatorID>
@@ -31,7 +31,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -115,7 +115,7 @@
 <colUsage columnID="0455C494-37F7-3A66-2FCB-122570872850"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CC301CD6-D304-9A7C-6E21-76A32E95E2D0" name="p_72_Klient_p_72_Osoba_FK">
+<ind_PK_UK id="CC301CD6-D304-9A7C-6E21-76A32E95E2D0" name="p_72_Klient_Osoba_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>7D2FE747-FC8D-B186-F963-AEF051BFA33A</generatorID>

@@ -34,7 +34,7 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="p_72_Panstwo_ID_Panstwa" id="473C3C17-0B3B-E8D5-9F9F-0BC20814FB05">
+<Column name="ID_Panstwa" id="473C3C17-0B3B-E8D5-9F9F-0BC20814FB05">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>B838FC99-E688-7FF4-5E7A-DEC5484F40B4</generatorID>
@@ -61,7 +61,7 @@
 <colUsage columnID="F0113CF8-75F0-A07D-83A7-350CEBF9B492"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5EA53F56-6428-50FD-5D1F-112A7E6B4734" name="p_72_Wojewodztwo_p_72_Panstwo_FK">
+<ind_PK_UK id="5EA53F56-6428-50FD-5D1F-112A7E6B4734" name="p_72_Wojewodztwo_Panstwo_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
 <generatorID>1256940E-CF1B-C45E-F618-14DD6725CEB5</generatorID>
