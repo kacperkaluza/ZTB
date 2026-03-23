@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="44478359-753E-F2AA-5B8D-E0AD73F2BD81" containerWithKeyObject="55860EA7-B7A4-A867-47A2-5825181DBC7B" localFKIndex="93526F7E-A252-195A-A9CD-A9891FE4AA43" name="p_72_Adres_Ulica_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="95DF5FDC-2DC1-5C7E-80EA-AC77A749C803" containerWithKeyObject="2BCFD01E-6753-7CB9-530B-21DA2CB21CB6" localFKIndex="ACD5DC1E-EADD-D07C-E05E-DD3A01EB7470" name="p_72_Oddzial_Ulica_FK">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>1CBEEE96-2B05-91A7-E340-2F0FE1052EEC</generatorID>
+<createdTime>2026-03-23 20:09:22 UTC</createdTime>
+<generatorID>175D3610-2329-EBFB-BBCE-92734C33B0A9</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <referredTableLongName>p_72_Ulica</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

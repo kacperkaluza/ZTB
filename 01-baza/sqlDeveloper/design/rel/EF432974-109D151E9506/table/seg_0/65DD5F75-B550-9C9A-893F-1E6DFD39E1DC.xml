@@ -20,21 +20,65 @@
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_Osoba" id="1B75826F-57E3-2C0A-D2AF-836B03045C5D">
+<Column name="Imie" id="28404C3A-C982-D40B-FA47-7FBD705D7E89">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>D6AAB60E-DBE4-292D-7617-379D42BB1800</generatorID>
+<createdTime>2026-03-23 19:40:57 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AE41334C-F1AF-4031-B93C-C60A938760F5" referredColumn="9E050BC6-07C8-EB25-92BE-8BA870E3729C"/>
-</associations>
+</Column>
+<Column name="Nazwisko" id="C9186E7B-E5E3-DF1F-38F2-E3CA70A92E45">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 19:40:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL" id="1D7ED597-3AC1-1A5A-91D0-C3ED7FF9A87F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 19:40:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="B20BBCA1-C004-A0D4-BA04-4F4FC5A63770">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 19:40:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="044EFB71-C633-E1E1-84C4-1C42E8CFA30F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 19:40:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Numer_Dowodu" id="00F366A4-D604-734A-6308-853FB9609305">
 <createdBy>kacper</createdBy>
@@ -113,15 +157,14 @@
 <colUsage columnID="0455C494-37F7-3A66-2FCB-122570872850"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CC301CD6-D304-9A7C-6E21-76A32E95E2D0" name="p_72_Klient_Osoba_FK">
+<ind_PK_UK id="342041A0-CA2E-AA1A-1565-20B731DF79F7" name="p_72_Klient_PESEL">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>7D2FE747-FC8D-B186-F963-AEF051BFA33A</generatorID>
+<createdTime>2026-03-23 22:06:30 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
-<indexState>Foreign Key</indexState>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1B75826F-57E3-2C0A-D2AF-836B03045C5D"/>
+<colUsage columnID="1D7ED597-3AC1-1A5A-91D0-C3ED7FF9A87F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

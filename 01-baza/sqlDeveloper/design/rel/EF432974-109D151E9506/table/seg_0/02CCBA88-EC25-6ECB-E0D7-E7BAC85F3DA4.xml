@@ -8,18 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_Wypozyczenia" id="32E3A4F6-5DF7-616E-C2B2-F8D40CF8F309">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>09A821F5-9701-77DB-4F0D-DA2B16B14016</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="ID_Statusu" id="DD5E226B-7D4A-4E21-939F-62FDEC670EA8">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
@@ -63,7 +51,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -151,6 +139,19 @@
 <colAssociation fkAssociation="777DCFE5-606F-7EC0-CE6A-B06D314DE04D" referredColumn="50952C3F-C72F-6A1A-9E81-C6480B6BB093"/>
 </associations>
 </Column>
+<Column name="Uwagi" id="53A04A5C-089C-FD6D-191E-2511F97F1C06">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-20 09:53:32 UTC</createdTime>
+<generatorID>D3A8BCC8-B0D3-79FE-8DB2-4927B5BEFC85</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Data_Wydania" id="5240EFD6-5744-F374-5039-C664EB9B40AB">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
@@ -187,33 +188,160 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Uwagi" id="53A04A5C-089C-FD6D-191E-2511F97F1C06">
+<Column name="Data_Kara_Spoznienia" id="320C3CB2-06C9-82E2-3B85-94BE112B07AB">
 <createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>D3A8BCC8-B0D3-79FE-8DB2-4927B5BEFC85</generatorID>
+<createdTime>2026-03-23 21:01:38 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>500 CHAR</dataTypeSize>
-<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Liczba_Dni" id="00925D2C-1337-4569-352E-F769A06ABD10">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:08:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Koszt_Transportu" id="0E158086-FBF6-33D8-F5DA-8A3EB9979D7F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:08:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przebieg_Start" id="4BF45847-7C53-7AE6-03BA-C4B22A1247E0">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:44:25 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przebieg_Finish" id="A69E341B-D6F6-3D1C-6C7D-F71F06EB6DDC">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:44:40 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przebieg_Limit" id="BE4AC656-4DFF-889E-0881-1F813A3CF56F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:08:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przebieg_Doplata" id="D068241D-E254-D141-E904-F83DDE4484FD">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:55:15 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Doba" id="EE65AC8F-890D-15F8-B27C-15D46F0831BD">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:08:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Rabat_Procent" id="23414118-0C1A-8272-2DCF-00BEE4928293">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:51:13 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Rabat" id="D64CBDF6-FC7B-A566-E728-C014E153C00F">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:08:31 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kaucja" id="E2160741-DE4A-7BCF-815F-678FE4BC0520">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:50:28 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Calkowita" id="C336F0C5-543C-C218-5071-49395B39FEAD">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 20:50:02 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C2527B37-9D0D-366C-1CAE-C7F476B0485C" name="p_72_Wypozyczenia_PK">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>36DF9808-84A5-49DE-A5C4-DB82FF569BAE</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="32E3A4F6-5DF7-616E-C2B2-F8D40CF8F309"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="475D13A6-58B9-E69D-0FD3-6F7F7D280E80" name="p_72_Wypoz_Klient_FK">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>

@@ -20,6 +20,21 @@
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ID_Oddzial" id="F4780ECD-8473-7B5D-2DFB-74DA2B34251A">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:28:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C725D11-EFEA-E760-83C5-61FAB2EC48F5" referredColumn="A541D19B-286B-E3C4-C22B-D40E0CE72BD2"/>
+</associations>
+</Column>
 <Column name="ID_Typu_Paliwa" id="E196B213-5396-6D47-016A-E428C7879936">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
@@ -88,6 +103,21 @@
 <colAssociation fkAssociation="7F9C1B2F-4FB7-0F30-6F7E-D56BC7048678" referredColumn="7E38200F-24F3-AA31-CB40-40FCF77119F2"/>
 </associations>
 </Column>
+<Column name="ID_Typu_Skrzyni" id="4C130413-9BB5-8389-4296-0DAAEC1D0910">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:04:23 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A149B7E4-E518-C4C0-B3F3-29C70576199E" referredColumn="9AF6C010-D5CF-B366-B044-A12A5EE73DD9"/>
+</associations>
+</Column>
 <Column name="Numer_Rejestracyjny" id="E0415A72-65D7-DB6F-EEC2-7C5331D1010C">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
@@ -136,21 +166,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Liczba_Miejsc" id="4570CED1-E270-C8AC-93C6-37265EF65142">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>AF72973B-E280-CA95-3894-155D4F0B4AC8</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Pojemnosc_Silnika_cm3" id="DCC6EDC4-461E-0CB8-ACA3-77B7342E33D5">
@@ -177,44 +194,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Typ_Skrzyni" id="96B6F079-9829-F20C-F1FC-DB7897082F86">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>4D1A8433-B548-664A-4F67-8FCA030028E1</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Data_Ostatniego_Przegladu" id="0E86E1DB-D1D2-9E0D-AEF1-4B0E01BA0BB8">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>50AAA1F7-AC92-1B2B-3C15-A408538B7AE8</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Czy_Dostepny" id="C9A62B08-51BF-6D41-5ADF-3F35450BE96E">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>974168C6-BB64-023B-8DED-4FB120303631</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -295,6 +274,27 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E196B213-5396-6D47-016A-E428C7879936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF39B178-6FD3-50C3-0CB2-0F10067821E7" name="p_72_Samochod_Typ_Skrzyni_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:04:23 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C130413-9BB5-8389-4296-0DAAEC1D0910"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5127919-8F5D-E51A-6649-FA75AF14AFD5" name="p_72_Samochod_Oddzial_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:28:57 UTC</createdTime>
+<generatorID>01236E15-F080-A35F-D756-676AB4F0D44E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4780ECD-8473-7B5D-2DFB-74DA2B34251A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

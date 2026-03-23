@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A149B7E4-E518-C4C0-B3F3-29C70576199E" containerWithKeyObject="EADE4EB4-7B7E-FC98-9093-B2954826DE8A" localFKIndex="DF39B178-6FD3-50C3-0CB2-0F10067821E7" name="p_72_Samochod_Typ_Skrzyni_FK">
+<createdBy>kacper</createdBy>
+<createdTime>2026-03-23 21:04:23 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>p_72_Typ_Skrzyni</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D0C96C1C-A17E-145F-700D-CE6756543DC8</referredTableID>
+<keyObject>06131E32-38F1-A254-1124-AF81DE2DDD60</keyObject>
+<referredKeyID>06131E32-38F1-A254-1124-AF81DE2DDD60</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Typu_Skrzyni</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
