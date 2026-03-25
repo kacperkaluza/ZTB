@@ -8,23 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID_Statusu" id="DD5E226B-7D4A-4E21-939F-62FDEC670EA8">
-<createdBy>kacper</createdBy>
-<createdTime>2026-03-20 09:53:32 UTC</createdTime>
-<generatorID>93E725CD-3684-6089-DA33-806092BBCBFB</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8E21C220-CFF7-E132-5B35-BCEBFAB6E13E" referredColumn="3131F517-D63D-305E-F656-E132EA7AFF37"/>
-</associations>
-</Column>
 <Column name="ID_Samochod" id="9126B191-1F87-57AA-1B45-9ED36D0327C3">
 <createdBy>kacper</createdBy>
 <createdTime>2026-03-20 09:53:32 UTC</createdTime>
