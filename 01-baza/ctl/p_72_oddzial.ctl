@@ -1,6 +1,6 @@
 OPTIONS (SKIP=0, ERRORS=100000)
 LOAD DATA
-INFILE '/tmp/sqlldr/csv/p_72_oddzial.csv'
+INFILE 'csv/p_72_oddzial.csv'
 INTO TABLE P_72_ODDZIAL
 APPEND
 FIELDS TERMINATED BY ','
