@@ -1,52 +1,26 @@
--- =============================================================================
--- ro_01.sql — ROLLUP: Przychody wg hierarchii geograficznej
--- =============================================================================
--- Pytanie biznesowe:
---   Jaki jest laczny przychod (suma stawek dziennych * dni, srednia kaucja)
---   z wypozyczen w podziale na hierarchie geograficzna oddzialu wydania:
---   Panstwo → Wojewodztwo → Miasto?
---   ROLLUP generuje podsumowania na kazdym poziomie hierarchii
---   (miasto, wojewodztwo, panstwo, ogolna suma).
---
--- Sciezki slownikowe (>=3):
---   1) Wypozyczenia → Oddzial (wydania) → Ulica → Miasto → Wojewodztwo → Panstwo
---   2) Wypozyczenia → Samochod → Kategoria
---
--- Miary: Cena_Doba, Kaucja, wyliczana liczba_dni i koszt_calkowity
--- =============================================================================
+-- ROLLUP 01
+-- Pokazuje laczny przychod netto w podziale na wojewodztwa, marki i typy paliwa
 
 SELECT
-    pa.ID_Panstwa,
-    MIN(pa.Nazwa_Panstwa)                                           AS Nazwa_Panstwa,
-    woj.ID_Wojewodztwo,
-    MIN(woj.Nazwa_Wojewodztwa)                                      AS Nazwa_Wojewodztwa,
-    mia.ID_Miasta,
-    MIN(mia.Nazwa_Miasta)                                           AS Nazwa_Miasta,
-    kat.ID_Kategoria,
-    MIN(kat.Nazwa_Kategorii)                                        AS Nazwa_Kategorii,
-    COUNT(*)                                                        AS liczba_wypozyczen,
-    SUM(w.Cena_Doba * (w.Data_Faktycznego_Zwrotu - w.Data_Wydania))
-                                                                    AS przychod_calkowity,
-    ROUND(AVG(w.Cena_Doba), 2)                                      AS srednia_stawka_dzienna,
-    ROUND(AVG(w.Kaucja), 2)                                         AS srednia_kaucja,
-    SUM(w.Kaucja)                                                   AS suma_kaucji
-FROM
-    p_72_Wypozyczenia w
-    -- Sciezka geograficzna: Oddzial wydania → Ulica → Miasto → Wojewodztwo → Panstwo
-    JOIN p_72_Oddzial     odd ON w.ID_Oddzial_Wydania = odd.ID_Oddzial
-    JOIN p_72_Ulica       ul  ON odd.ID_Ulica          = ul.ID_Ulica
-    JOIN p_72_Miasto      mia ON ul.ID_Miasta           = mia.ID_Miasta
-    JOIN p_72_Wojewodztwo woj ON mia.ID_Wojewodztwo     = woj.ID_Wojewodztwo
-    JOIN p_72_Panstwo     pa  ON woj.ID_Panstwa         = pa.ID_Panstwa
-    -- Sciezka pojazdu: Samochod → Kategoria
-    JOIN p_72_Samochod    sam ON w.ID_Samochod           = sam.ID_Samochod
-    JOIN p_72_Kategoria   kat ON sam.ID_Kategoria         = kat.ID_Kategoria
-WHERE
-    w.Data_Faktycznego_Zwrotu IS NOT NULL
-GROUP BY
-    ROLLUP(pa.ID_Panstwa, woj.ID_Wojewodztwo, mia.ID_Miasta, kat.ID_Kategoria)
-ORDER BY
-    pa.ID_Panstwa       NULLS LAST,
-    woj.ID_Wojewodztwo  NULLS LAST,
-    mia.ID_Miasta       NULLS LAST,
-    kat.ID_Kategoria    NULLS LAST;
+    NVL(woj.Nazwa_Wojewodztwa, 'RAZEM WOJEWODZTWO') AS wojewodztwo,
+    NVL(m.Nazwa_Marki, 'RAZEM MARKA') AS marka,
+    NVL(tp.Nazwa_Paliwa, 'RAZEM TYP PALIWA') AS typ_paliwa,
+    ROUND(d.laczny_przychod_netto, 2) AS laczny_przychod_netto
+FROM (
+    SELECT
+        mi.ID_Wojewodztwo,
+        mod.ID_Marka,
+        sam.ID_Typu_Paliwa,
+        SUM(w.Cena_Doba) AS laczny_przychod_netto
+    FROM p_72_Wypozyczenia w
+    JOIN p_72_Samochod sam ON w.ID_Samochod = sam.ID_Samochod
+    JOIN p_72_Model mod ON sam.ID_Model = mod.ID_Model
+    JOIN p_72_Oddzial s ON w.ID_Oddzial_Wydania = s.ID_Oddzial
+    JOIN p_72_Ulica u ON s.ID_Ulica = u.ID_Ulica
+    JOIN p_72_Miasto mi ON u.ID_Miasta = mi.ID_Miasta
+    GROUP BY ROLLUP (mi.ID_Wojewodztwo, mod.ID_Marka, sam.ID_Typu_Paliwa)
+) d
+LEFT JOIN p_72_Wojewodztwo woj ON d.ID_Wojewodztwo = woj.ID_Wojewodztwo
+LEFT JOIN p_72_Marka m ON d.ID_Marka = m.ID_Marka
+LEFT JOIN p_72_Typ_Paliwa tp ON d.ID_Typu_Paliwa = tp.ID_Typu_Paliwa
+ORDER BY wojewodztwo, marka, typ_paliwa;

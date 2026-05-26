@@ -1,27 +1,31 @@
 # SQL*Loader
 
-This folder contains a full CSV-based loading pipeline for all project tables.
+## Opis
+Katalog zawiera podkatalogi: 
+- csv — pliki csv z danymi
+- ctl — pliki ctl z instrukcjami dla SQL*Loadera
+- sql — pliki sql z zapytaniami
 
-## Main script
+## Generowanie danych
+Skrypt w pythonie do generowania plikow csv i ctl 
 
-- `run_full_pipeline.ps1`
+## Zaladowanie danych 
+Z racji iz korzystalismy z Dockerowego Oracle, SQL*Loader jest w Dockerze. Trzeba go skopiowac do kontenera. 
+Dlatego jest to troche bardziej skoplikowane niz korzystanie z lokalnego SQL*Loadera. Lub wirtualki linuxa.
+Tutaj opisze jak wykorzystac sqlldr w dockerze zrobiony przez nas:
 
-## What it does
+### Uruchom skrypt:
+Najpierw upewnij się że docker jest uruchomiony:
 
-1. Generates realistic CSV data (`csv/`) for all tables (total 108008 rows)
-2. Cleans target tables in FK-safe order
-3. Loads all tables with SQL*Loader
-4. Exports verification reports to `report/`
-
-## Run
-
-From repository root:
-
-```powershell
-./sqlldr/run_full_pipeline.ps1
+```bash
+docker ps
 ```
 
-## Output reports
+Nastepnie uruchom skrypt, który kopiuje pliki do kontenera i uruchamia sqlldr:
 
-- `report/counts_actual.csv`
-- `report/total_rows.csv`
+```bash
+./0-sqlldr-docker.sh
+```
+
+
+
